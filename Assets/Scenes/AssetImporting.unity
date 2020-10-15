@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -307,7 +307,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8720799427312963973, guid: dc9b6aeb3be75344ca7234a4ecefa787, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc9b6aeb3be75344ca7234a4ecefa787, type: 3}
 --- !u!1001 &98607272
 PrefabInstance:
@@ -7877,6 +7878,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1393326194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1922661490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 142769260316525514, guid: dc9b6aeb3be75344ca7234a4ecefa787,
+    type: 3}
+  m_PrefabInstance: {fileID: 88358521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1922661491
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922661490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 327.06647
+  m_Height: 654.13293
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.0047654547, z: 65.65377}
 --- !u!1001 &1955131196
 PrefabInstance:
   m_ObjectHideFlags: 0
