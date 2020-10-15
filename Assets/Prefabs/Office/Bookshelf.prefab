@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 4046424864405755557}
   - component: {fileID: 5689086182219230778}
   - component: {fileID: 2138317820641344020}
+  - component: {fileID: 1914330575788987068}
   m_Layer: 0
   m_Name: Old_Dusty_Bookshelf_dusty_bookshelf_Mat_0
   m_TagString: Untagged
@@ -344,6 +345,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1914330575788987068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8719888801942579883}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 83.729706, y: 34.399136, z: 208.00005}
+  m_Center: {x: 0, y: -2.0233803, z: -104.002914}
 --- !u!1 &8833574642334161667
 GameObject:
   m_ObjectHideFlags: 0

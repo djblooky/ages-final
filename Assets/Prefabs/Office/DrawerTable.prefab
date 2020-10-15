@@ -974,6 +974,7 @@ GameObject:
   - component: {fileID: 2334031059516300774}
   - component: {fileID: 8853130448768299144}
   - component: {fileID: 4342887198763872038}
+  - component: {fileID: 1188162364834334754}
   m_Layer: 0
   m_Name: Box001_Material #25_0
   m_TagString: Untagged
@@ -1042,3 +1043,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1188162364834334754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8839628939058587839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 16.000011, z: 8.000006}
+  m_Center: {x: 0, y: -1.1368684e-12, z: -4.0000124}
