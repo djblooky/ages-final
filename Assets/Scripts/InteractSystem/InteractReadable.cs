@@ -8,12 +8,6 @@ public class InteractReadable : Interactable
     [SerializeField]
     private Sprite noteImage;
 
-    private void Start()
-    {
-        //interactText = "Click to read";
-    }
-
-
     public override void Interact()
     {
         OpenedNote?.Invoke(noteImage);

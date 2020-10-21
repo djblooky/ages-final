@@ -5,10 +5,10 @@ using VHS;
 public class NoteUI : MonoBehaviour
 {
     [SerializeField]
-    InputHandler inputHandler;
+    private InputHandler inputHandler;
 
     [SerializeField]
-    Image noteImage;
+    private Image noteImage;
 
     private CanvasGroup canvasGroup;
 

@@ -10,11 +10,6 @@ public class PlayerRaycast : MonoBehaviour
     private float distanceToSee = 3;
     private RaycastHit objectHit;
 
-    private void Start()
-    {
-
-    }
-
     private void Update()
     {
         CastRay();
