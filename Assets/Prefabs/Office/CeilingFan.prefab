@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 2180626550915131354}
   - component: {fileID: 3414888822415870571}
   - component: {fileID: 66084691669469789}
+  - component: {fileID: 2515008509924640309}
   m_Layer: 0
   m_Name: Circle.000_Material.001_0
   m_TagString: Untagged
@@ -251,6 +252,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2515008509924640309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3385960573576575069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e1637f61524405489dc5e650cde9b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
 --- !u!1 &5591269113724759108
 GameObject:
   m_ObjectHideFlags: 0
