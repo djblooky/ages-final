@@ -1,5 +1,10 @@
-﻿public class InteractLight : Interactable
+﻿using UnityEngine;
+
+public class InteractLight : Interactable
 {
+    [SerializeField]
+    private Light light;
+
     private bool isOn = false;
 
     public override void Interact()
@@ -28,12 +33,12 @@
     {
         if (isOn)
         {
-            //turn light emission off
+            light.enabled = false;
             isOn = false;
         }
         else
         {
-            //turn light emission on
+            light.enabled = true;
             isOn = true;
         }
     }

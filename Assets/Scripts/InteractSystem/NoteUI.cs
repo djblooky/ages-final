@@ -1,8 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using VHS;
 
 public class NoteUI : MonoBehaviour
 {
+    [SerializeField]
+    InputHandler inputHandler;
+
     [SerializeField]
     Image noteImage;
 
@@ -17,6 +21,7 @@ public class NoteUI : MonoBehaviour
 
     private void OnOpenedNote(Sprite s)
     {
+        inputHandler.enabled = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         canvasGroup.alpha = 1;
@@ -27,6 +32,7 @@ public class NoteUI : MonoBehaviour
     // links to button event
     public void CloseNote()
     {
+        inputHandler.enabled = true;
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         Cursor.lockState = CursorLockMode.Locked;
