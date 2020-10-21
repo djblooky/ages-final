@@ -1,24 +1,49 @@
-﻿using TMPro;
+﻿using System;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour, IInteractable
+public class Interactable : MonoBehaviour
 {
-    public Material defaultMaterial { get; set; }
-    public Material hoverMaterial { get; set; }
-    public TMP_Text onHoverText { get; set; }
+    public static event Action<string> InteractTextChanged;
 
-    public void OnHover()
-    {
-        throw new System.NotImplementedException();
-    }
+    [SerializeField]
+    private Shader hoverShader;
+
+    [SerializeField]
+    protected string interactText;
+
+    private MeshRenderer meshRenderer;
+    private Shader defaultShader;
 
     private void Start()
     {
+        if (hoverShader == null)
+            hoverShader = Shader.Find("TestShader");
 
+        meshRenderer = GetComponent<MeshRenderer>();
+        defaultShader = meshRenderer.material.shader;
+        tag = "Interactable";
     }
 
-    private void Update()
+    private void OnHoveredOverInteractable()
     {
+        //meshRenderer.material.shader = hoverShader;
+        InteractTextChanged?.Invoke(interactText);
+    }
 
+    private void OnHoveredOffInteractable()
+    {
+        //meshRenderer.material.shader = defaultShader;
+    }
+
+    private void OnEnable()
+    {
+        InteractController.HoveredOverInteractable += OnHoveredOverInteractable;
+        InteractController.HoveredOffInteractable += OnHoveredOffInteractable;
+    }
+
+    private void OnDisable()
+    {
+        InteractController.HoveredOverInteractable -= OnHoveredOverInteractable;
+        InteractController.HoveredOffInteractable -= OnHoveredOffInteractable;
     }
 }

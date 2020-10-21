@@ -1,13 +1,8 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 public interface IInteractable
 {
-    TMP_Text onHoverText { get; set; }
-    Material defaultMaterial { get; set; }
-    Material hoverMaterial { get; set; }
-
-    void OnHover();
-
+    string interactText { get; set; }
+    Shader hoverShader { get; set; }
 
 }

@@ -1,18 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
 
 public class InteractText : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private TMP_Text textComponent;
+    private CanvasGroup canvasGroup;
+
+    private void Start()
     {
-        
+        textComponent = GetComponent<TMP_Text>();
+        canvasGroup = GetComponent<CanvasGroup>();
+        canvasGroup.alpha = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnHoveredOverInteractable()
     {
-        
+        canvasGroup.alpha = 1;
+    }
+
+    private void OnHoveredOffInteractable()
+    {
+        canvasGroup.alpha = 0;
+    }
+
+    void OnInteractTextChanged(string interactText) 
+    {
+        textComponent.text = interactText;
+    }
+
+    private void OnEnable()
+    {
+        Interactable.InteractTextChanged += OnInteractTextChanged;
+        InteractController.HoveredOverInteractable += OnHoveredOverInteractable;
+        InteractController.HoveredOffInteractable += OnHoveredOffInteractable;
+    }
+
+    private void OnDisable()
+    {
+        Interactable.InteractTextChanged -= OnInteractTextChanged;
+        InteractController.HoveredOverInteractable -= OnHoveredOverInteractable;
+        InteractController.HoveredOffInteractable -= OnHoveredOffInteractable;
     }
 }
