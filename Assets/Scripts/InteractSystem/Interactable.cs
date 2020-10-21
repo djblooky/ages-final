@@ -1,49 +1,50 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    public static event Action<string> InteractTextChanged;
+    [SerializeField]
+    private Color hoverColor;
 
     [SerializeField]
-    private Shader hoverShader;
+    public string interactText;
 
-    [SerializeField]
-    protected string interactText;
-
-    private MeshRenderer meshRenderer;
-    private Shader defaultShader;
+    protected MeshRenderer meshRenderer;
+    protected Color defaultColor;
 
     private void Start()
     {
-        if (hoverShader == null)
-            hoverShader = Shader.Find("TestShader");
+        if (hoverColor == null)
+            hoverColor = Color.white;
 
         meshRenderer = GetComponent<MeshRenderer>();
-        defaultShader = meshRenderer.material.shader;
         tag = "Interactable";
     }
 
-    private void OnHoveredOverInteractable()
+    protected virtual void OnHoveredOver(Interactable g)
     {
-        //meshRenderer.material.shader = hoverShader;
-        InteractTextChanged?.Invoke(interactText);
+        //g.meshRenderer.material.color = hoverColor;
     }
 
-    private void OnHoveredOffInteractable()
+    protected virtual void OnHoveredOff()
     {
-        //meshRenderer.material.shader = defaultShader;
+        // g.meshRenderer.material.color = defaultColor;
+    }
+
+    public virtual void Interact()
+    {
+        Debug.Log($"Interacted with {gameObject}");
     }
 
     private void OnEnable()
     {
-        InteractController.HoveredOverInteractable += OnHoveredOverInteractable;
-        InteractController.HoveredOffInteractable += OnHoveredOffInteractable;
+        PlayerRaycast.HoveredOver += OnHoveredOver;
+        PlayerRaycast.HoveredOff += OnHoveredOff;
     }
 
     private void OnDisable()
     {
-        InteractController.HoveredOverInteractable -= OnHoveredOverInteractable;
-        InteractController.HoveredOffInteractable -= OnHoveredOffInteractable;
+        PlayerRaycast.HoveredOver -= OnHoveredOver;
+        PlayerRaycast.HoveredOff -= OnHoveredOff;
     }
+
 }

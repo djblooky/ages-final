@@ -4,7 +4,7 @@
 
     private void Start()
     {
-        SetLightHoverText();
+        //SetLightHoverText();
     }
 
     private void OnClick()

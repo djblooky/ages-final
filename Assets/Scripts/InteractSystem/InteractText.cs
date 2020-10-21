@@ -13,8 +13,9 @@ public class InteractText : MonoBehaviour
         canvasGroup.alpha = 0;
     }
 
-    private void OnHoveredOverInteractable()
+    private void OnHoveredOverInteractable(Interactable g)
     {
+        textComponent.text = g.interactText;
         canvasGroup.alpha = 1;
     }
 
@@ -23,22 +24,15 @@ public class InteractText : MonoBehaviour
         canvasGroup.alpha = 0;
     }
 
-    void OnInteractTextChanged(string interactText) 
-    {
-        textComponent.text = interactText;
-    }
-
     private void OnEnable()
     {
-        Interactable.InteractTextChanged += OnInteractTextChanged;
-        InteractController.HoveredOverInteractable += OnHoveredOverInteractable;
-        InteractController.HoveredOffInteractable += OnHoveredOffInteractable;
+        PlayerRaycast.HoveredOver += OnHoveredOverInteractable;
+        PlayerRaycast.HoveredOff += OnHoveredOffInteractable;
     }
 
     private void OnDisable()
     {
-        Interactable.InteractTextChanged -= OnInteractTextChanged;
-        InteractController.HoveredOverInteractable -= OnHoveredOverInteractable;
-        InteractController.HoveredOffInteractable -= OnHoveredOffInteractable;
+        PlayerRaycast.HoveredOver -= OnHoveredOverInteractable;
+        PlayerRaycast.HoveredOff -= OnHoveredOffInteractable;
     }
 }
