@@ -2,17 +2,12 @@
 {
     private bool isOn = false;
 
-    private void Start()
-    {
-        //SetLightHoverText();
-    }
-
-    private void OnClick()
+    public override void Interact()
     {
         ToggleLight();
     }
 
-    private void OnHoverOver()
+    protected override void OnHoveredOver(Interactable i)
     {
         SetLightHoverText();
     }

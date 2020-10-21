@@ -13,10 +13,6 @@ public class InteractReadable : Interactable
         //interactText = "Click to read";
     }
 
-    protected override void OnHoveredOver(Interactable i)
-    {
-
-    }
 
     public override void Interact()
     {
