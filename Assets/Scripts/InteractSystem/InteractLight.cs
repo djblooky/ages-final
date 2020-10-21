@@ -5,8 +5,6 @@ public class InteractLight : Interactable
     [SerializeField]
     private Light light;
 
-    private bool isOn = false;
-
     public override void Interact()
     {
         ToggleLight();
@@ -19,7 +17,7 @@ public class InteractLight : Interactable
 
     private void SetLightHoverText()
     {
-        if (isOn)
+        if (light.enabled)
         {
             interactText = "Turn light off";
         }
@@ -31,15 +29,13 @@ public class InteractLight : Interactable
 
     private void ToggleLight()
     {
-        if (isOn)
+        if (light.enabled)
         {
             light.enabled = false;
-            isOn = false;
         }
         else
         {
             light.enabled = true;
-            isOn = true;
         }
     }
 
