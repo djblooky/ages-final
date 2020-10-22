@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 83290862b6aa8884c9998ed406eecf2d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Regionaire
+  fontNames:
+  - Regionaire
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 82a030b81de440a42bd693835145dfbc, type: 3}
+  - {fileID: 12800000, guid: a24407df55d1f9940aed27ea30dc889d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
