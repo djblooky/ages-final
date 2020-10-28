@@ -199,16 +199,16 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3274061797584548401}
-  - {fileID: 314126617306476312}
-  - {fileID: 7681634254614537483}
   - {fileID: 1912066466004486212}
-  - {fileID: 1765075279330931817}
+  - {fileID: 7681634254614537483}
+  - {fileID: 314126617306476312}
+  - {fileID: 3274061797584548401}
+  - {fileID: 8462276595520806079}
   - {fileID: 8105213736616226730}
   - {fileID: 5380536516736468296}
   - {fileID: 386677065370042839}
   - {fileID: 3521270027426479587}
-  - {fileID: 8462276595520806079}
+  - {fileID: 1765075279330931817}
   - {fileID: 5414779096042305928}
   - {fileID: 583742933237533793}
   - {fileID: 8925466024299342107}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 8462276595520806079}
   m_Layer: 0
   m_Name: MiddleDrawer
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -318,13 +318,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525619990401639405}
   m_LocalRotation: {x: 0, y: 0, z: -0, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6593468701457789042}
   - {fileID: 3755275445901612484}
   m_Father: {fileID: 5577913153585068285}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606359826036846262
 GameObject:
@@ -794,7 +794,7 @@ GameObject:
   - component: {fileID: 7681634254614537483}
   m_Layer: 0
   m_Name: LeftDrawer2
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,7 +813,7 @@ Transform:
   - {fileID: 1607134011860037089}
   - {fileID: 5264708434553875256}
   m_Father: {fileID: 5577913153585068285}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199425623250870313
 GameObject:
@@ -1015,6 +1015,7 @@ GameObject:
   - component: {fileID: 3441050200507908863}
   - component: {fileID: 7734782549446375940}
   - component: {fileID: 2721604389883536120}
+  - component: {fileID: 7875862848426884377}
   m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
@@ -1083,6 +1084,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7875862848426884377
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603071942616289819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 02b32bc95bc75344f8a4f6ac1ca67682, type: 2}
 --- !u!1 &1624318551547686593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1772,7 @@ GameObject:
   - component: {fileID: 314126617306476312}
   m_Layer: 0
   m_Name: LeftDrawer3
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1776,7 +1791,7 @@ Transform:
   - {fileID: 6339151245836792176}
   - {fileID: 5554097412671674265}
   m_Father: {fileID: 5577913153585068285}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2684091589880877676
 GameObject:
@@ -1789,7 +1804,7 @@ GameObject:
   - component: {fileID: 3274061797584548401}
   m_Layer: 0
   m_Name: LeftDrawer4
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1808,7 +1823,7 @@ Transform:
   - {fileID: 8274262919833814936}
   - {fileID: 6617174485327564051}
   m_Father: {fileID: 5577913153585068285}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2811070429200034491
 GameObject:
@@ -2174,7 +2189,7 @@ GameObject:
   - component: {fileID: 8105213736616226730}
   m_Layer: 0
   m_Name: RightDrawer1
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2399,7 +2414,7 @@ Transform:
   m_Children:
   - {fileID: 7065757700229417381}
   m_Father: {fileID: 5577913153585068285}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3573433853222555724
 GameObject:
@@ -3015,9 +3030,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912066466004486212}
+  - component: {fileID: 131983967841607968}
+  - component: {fileID: 6638508114217933782}
+  - component: {fileID: 8451543912778237293}
   m_Layer: 0
   m_Name: LeftDrawer1
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3036,8 +3054,54 @@ Transform:
   - {fileID: 8517749910311417472}
   - {fileID: 2600980778880402389}
   m_Father: {fileID: 5577913153585068285}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &131983967841607968
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419007520478483892}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d48887c5ad3ebb4d848e06d25a9de79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6638508114217933782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419007520478483892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0, g: 0, b: 0, a: 0}
+  interactText: 
+--- !u!65 &8451543912778237293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419007520478483892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.629346, y: 0.16718708, z: 0.50470626}
+  m_Center: {x: -0.14990899, y: 0.2712996, z: 0.6519783}
 --- !u!1 &4422878071715923272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,7 +3678,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376299591251609425}
-  - component: {fileID: 5105199129553311982}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -3637,19 +3700,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -86.670006, z: 0}
---- !u!65 &5105199129553311982
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5185665584922828793}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.9523342, z: 1.993377}
-  m_Center: {x: 0, y: 0.0015888214, z: 0.00000019073487}
 --- !u!1 &5310336926084420970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,7 +3746,7 @@ GameObject:
   - component: {fileID: 5380536516736468296}
   m_Layer: 0
   m_Name: RightDrawer2
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4295,7 +4345,7 @@ GameObject:
   - component: {fileID: 3521270027426479587}
   m_Layer: 0
   m_Name: RightDrawer4
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4530,6 +4580,7 @@ GameObject:
   - component: {fileID: 8517749910311417472}
   - component: {fileID: 570912143176465843}
   - component: {fileID: 2059310333059795186}
+  - component: {fileID: 4721586099008536515}
   m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
@@ -4598,6 +4649,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4721586099008536515
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586694852855730494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d31ac0d129a3b4845909eb5764462778, type: 2}
 --- !u!1 &6716770247546091591
 GameObject:
   m_ObjectHideFlags: 0
@@ -4877,7 +4942,7 @@ GameObject:
   - component: {fileID: 386677065370042839}
   m_Layer: 0
   m_Name: RightDrawer3
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

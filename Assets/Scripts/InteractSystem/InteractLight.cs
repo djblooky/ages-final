@@ -38,8 +38,4 @@ public class InteractLight : Interactable
             light.enabled = true;
         }
     }
-
-
-
-
 }
