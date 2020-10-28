@@ -6335,36 +6335,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.011718751
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.01171875
-      objectReference: {fileID: 0}
-    - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.011718751
-      objectReference: {fileID: 0}
     - target: {fileID: 5742559851486971094, guid: 8ac427da023bcfa4db31b306967ec239,
         type: 3}
       propertyPath: m_Name
