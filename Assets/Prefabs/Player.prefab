@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327301758dedbce4f9837b59b9813e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToSee: 1.5
+  distanceToSee: 2
 --- !u!1001 &8708385944649542391
 PrefabInstance:
   m_ObjectHideFlags: 0
