@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class InteractLight : Interactable
+public class Lamp : Interactable
 {
     [SerializeField]
     private Light light;

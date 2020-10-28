@@ -41,11 +41,11 @@ public class NoteUI : MonoBehaviour
 
     private void OnEnable()
     {
-        InteractReadable.OpenedNote += OnOpenedNote;
+        Note.OpenedNote += OnOpenedNote;
     }
 
     private void OnDisable()
     {
-        InteractReadable.OpenedNote -= OnOpenedNote;
+        Note.OpenedNote -= OnOpenedNote;
     }
 }

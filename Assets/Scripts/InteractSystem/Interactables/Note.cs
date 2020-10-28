@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class InteractReadable : Interactable
+public class Note : Interactable
 {
     public static event Action<Sprite> OpenedNote;
 
