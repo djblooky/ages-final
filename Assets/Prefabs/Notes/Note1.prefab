@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3730485229933420957
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: noteText
+      value: 'If you are reading this you are already running out of time!  You have
+        to escape before it''s too late.
+
+
+        Don''t trust the room.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.60876125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7933535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552958972551290235, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: noteImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d9611164fc53631479a3854f14a8ef5d,
+        type: 3}
+    - target: {fileID: 1552958972551290235, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5642427898180797362, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_Name
+      value: Note1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eefc6f74682647c47bd8121b0a83e663, type: 3}

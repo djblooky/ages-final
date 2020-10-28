@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class Note : Interactable
 {
-    public static event Action<Sprite> OpenedNote;
+    public static event Action<string> OpenedNote;
 
     [SerializeField]
-    private Sprite noteImage;
+    [TextArea(1,10)]
+    private string noteText;
 
     public override void Interact()
     {
-        OpenedNote?.Invoke(noteImage);
+        OpenedNote?.Invoke(noteText);
     }
 }

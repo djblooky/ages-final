@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 using VHS;
 
@@ -10,6 +11,9 @@ public class NoteUI : MonoBehaviour
     [SerializeField]
     private Image noteImage;
 
+    [SerializeField]
+    private TMP_Text noteText;
+
     private CanvasGroup canvasGroup;
 
     private void Start()
@@ -19,14 +23,14 @@ public class NoteUI : MonoBehaviour
         canvasGroup.interactable = false;
     }
 
-    private void OnOpenedNote(Sprite s)
+    private void OnOpenedNote(string text)
     {
         inputHandler.enabled = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
-        noteImage.sprite = s;
+        noteText.text = text;
     }
 
     // links to button event
