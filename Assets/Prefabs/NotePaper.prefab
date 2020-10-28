@@ -71,8 +71,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544016982589535019}
-  - component: {fileID: 1552958972551290235}
   - component: {fileID: 5295728540400769440}
+  - component: {fileID: 706844841752836373}
   m_Layer: 0
   m_Name: NotePaper
   m_TagString: Interactable
@@ -95,21 +95,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 75, z: 0}
---- !u!114 &1552958972551290235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5642427898180797362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc060a61f3b12944c9327792056bde29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: Read note
-  noteImage: {fileID: 0}
 --- !u!65 &5295728540400769440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -123,6 +108,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 27.94, y: 0.46574807, z: 21}
   m_Center: {x: 0, y: 0.06472778, z: -0.046380043}
+--- !u!114 &706844841752836373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642427898180797362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1316b647f159d2543a2555747327280b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0, g: 0, b: 0, a: 0}
+  interactText: Read Note
+  noteImage: {fileID: 21300000, guid: d9611164fc53631479a3854f14a8ef5d, type: 3}
 --- !u!1 &9100439749294014558
 GameObject:
   m_ObjectHideFlags: 0
