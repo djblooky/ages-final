@@ -17,7 +17,6 @@ public abstract class Interactable : MonoBehaviour
             hoverColor = Color.white;
 
         meshRenderer = GetComponent<MeshRenderer>();
-        tag = "Interactable";
     }
 
     protected virtual void OnHoveredOver(Interactable i)
