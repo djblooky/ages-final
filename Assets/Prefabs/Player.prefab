@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327301758dedbce4f9837b59b9813e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToSee: 10
+  distanceToSee: 2
 --- !u!1001 &8708385944649542391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,6 +498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Icon
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843716870331872631, guid: b2a0df894ff4e104094394ec3de0a9b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3843716870331872634, guid: b2a0df894ff4e104094394ec3de0a9b2,
         type: 3}

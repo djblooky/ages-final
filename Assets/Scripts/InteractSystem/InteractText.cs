@@ -13,9 +13,9 @@ public class InteractText : MonoBehaviour
         canvasGroup.alpha = 0;
     }
 
-    private void OnHoveredOverInteractable(Interactable g)
+    private void OnHoveredOverInteractable(Interactable i)
     {
-        textComponent.text = g.interactText;
+        textComponent.text = i.interactText;
         canvasGroup.alpha = 1;
     }
 
