@@ -72,7 +72,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8088761073552440905}
   - component: {fileID: 7970717240111694701}
-  - component: {fileID: 1283191970947072170}
   m_Layer: 0
   m_Name: Safe
   m_TagString: Untagged
@@ -114,18 +113,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1283191970947072170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742924979433745563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e7db76da0f9c445a2bab82885a4b5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3194951045162230643
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,9 +514,11 @@ GameObject:
   - component: {fileID: 4484437341023597461}
   - component: {fileID: 1664107540693107244}
   - component: {fileID: 3365715185724431289}
+  - component: {fileID: 4934929305372116896}
+  - component: {fileID: 1418723434375933800}
   m_Layer: 0
   m_Name: GLTFNode_9
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -595,6 +584,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4934929305372116896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007585109099822885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.113155, y: 45.47596, z: 44.239895}
+  m_Center: {x: 15.015736, y: -39.178684, z: -26.856598}
+--- !u!114 &1418723434375933800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007585109099822885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e7db76da0f9c445a2bab82885a4b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0, g: 0, b: 0, a: 0}
+  interactText: 
 --- !u!1 &7738831498954939337
 GameObject:
   m_ObjectHideFlags: 0
