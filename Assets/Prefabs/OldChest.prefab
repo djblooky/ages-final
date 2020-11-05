@@ -153,12 +153,12 @@ Transform:
   m_GameObject: {fileID: 1884136565773271595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.023437502, y: 0.0234375, z: 0.023437502}
   m_Children:
   - {fileID: 5739795001956637438}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &3165463437843002113
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +734,7 @@ GameObject:
   - component: {fileID: 5796612595332470850}
   - component: {fileID: 7236642848018006965}
   - component: {fileID: 8031021734909617363}
+  - component: {fileID: 6009619551859562923}
   m_Layer: 0
   m_Name: Box001_CorpsCoffre_0
   m_TagString: Untagged
@@ -802,6 +803,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6009619551859562923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228198066491424780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 92.19667, y: 31.96448, z: 30.000021}
+  m_Center: {x: -6.872334e-16, y: 0.048365638, z: -15.000013}
 --- !u!1 &8776933790419091122
 GameObject:
   m_ObjectHideFlags: 0

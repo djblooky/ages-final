@@ -24,7 +24,6 @@ public class Drawer : Interactable
 
     protected override void OnHoveredOver(Interactable i)
     {
-        //Debug.Log("hovered drawer");
         SetDrawerHoverText();
     }
 

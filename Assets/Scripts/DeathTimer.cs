@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json.Serialization;
-using TMPro;
+﻿using TMPro;
+using System;
 using UnityEngine;
 
 public class DeathTimer : MonoBehaviour
