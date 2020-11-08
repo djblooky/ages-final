@@ -1250,6 +1250,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7368309133812727210, guid: ac67fd27643722449995be4be2cd1909,
+        type: 3}
+      propertyPath: displayTextOnHover
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7414762229565164125, guid: ac67fd27643722449995be4be2cd1909,
         type: 3}
       propertyPath: m_Name

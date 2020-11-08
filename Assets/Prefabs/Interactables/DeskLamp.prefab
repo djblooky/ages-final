@@ -343,6 +343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 0, g: 0, b: 0, a: 0}
   interactText: 
+  isOn: 1
   light: {fileID: 1991241297008423876}
 --- !u!65 &5360405465498150021
 BoxCollider:

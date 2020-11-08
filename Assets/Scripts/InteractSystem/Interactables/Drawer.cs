@@ -31,11 +31,11 @@ public class Drawer : Interactable
     {
         if (IsOpen)
         {
-            interactText = "Close drawer";
+            textToDisplayOnHover = "Close drawer";
         }
         else
         {
-            interactText = "Open drawer";
+            textToDisplayOnHover = "Open drawer";
         }
     }
 

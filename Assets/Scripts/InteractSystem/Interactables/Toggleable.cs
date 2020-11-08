@@ -2,7 +2,11 @@
 
 public class Toggleable : Interactable
 {
+    [SerializeField]
     protected bool isOn;
+
+    [SerializeField]
+    private string turnOnText = "Turn on", turnOffText = "Turn off";
 
     public override void Interact()
     {
@@ -18,11 +22,11 @@ public class Toggleable : Interactable
     {
         if (isOn)
         {
-            interactText = "Turn off";
+            textToDisplayOnHover = turnOffText;
         }
         else
         {
-            interactText = "Turn on";
+            textToDisplayOnHover = turnOnText;
         }
     }
 

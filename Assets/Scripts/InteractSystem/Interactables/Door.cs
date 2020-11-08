@@ -28,7 +28,7 @@ public class Door : Interactable
     {
         if (isLocked)
         {
-            interactText = "Locked";
+            textToDisplayOnHover = "Locked";
             //play locked sound
         }
         else
