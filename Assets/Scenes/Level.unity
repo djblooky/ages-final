@@ -1816,7 +1816,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24980
+  m_Name: pb_Mesh17872
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9753,7 +9753,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25022
+  m_Name: pb_Mesh17916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9916,7 +9916,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24892
+  m_Name: pb_Mesh17782
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10124,36 +10124,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -161.58401
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0009828755
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0009828755
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0009828755
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e0e659689693842a0de58733836d55, type: 3}

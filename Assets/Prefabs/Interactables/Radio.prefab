@@ -40,9 +40,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3288362182171067395}
+  - component: {fileID: 1398607318861861969}
   m_Layer: 0
   m_Name: Radio
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,12 +57,25 @@ Transform:
   m_GameObject: {fileID: 1277832530884969300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.0009828755, y: 0.0009828755, z: 0.0009828755}
   m_Children:
   - {fileID: 1181799818696131647}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -161.58401, z: 0}
+--- !u!65 &1398607318861861969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277832530884969300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 559.77545, y: 360.62164, z: 201.52379}
+  m_Center: {x: 5.3761654, y: -4.1535087, z: 94.261314}
 --- !u!1 &4501782515452916512
 GameObject:
   m_ObjectHideFlags: 0
