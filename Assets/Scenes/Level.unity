@@ -9701,7 +9701,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultCrosshair: {fileID: 21300000, guid: d718746f4eaf7a84084cfe539db938c3, type: 3}
-  interactCrosshair: {fileID: 21300000, guid: 85d7d4cb57e493347be66d5025009081, type: 3}
+  examineCrosshair: {fileID: 21300000, guid: 85d7d4cb57e493347be66d5025009081, type: 3}
+  handCrosshair: {fileID: 21300000, guid: 905916ca15f2132409bb0eddd3bb7c98, type: 3}
+  lookCrosshair: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!43 &2047105492
 Mesh:
   m_ObjectHideFlags: 0
