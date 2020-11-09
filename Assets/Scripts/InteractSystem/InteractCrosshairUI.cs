@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class InteractCrosshairUI : MonoBehaviour
 {
     [SerializeField]
-    private Sprite defaultCrosshair, interactCrosshair;
+    private Sprite defaultCrosshair, examineCrosshair, handCrosshair, lookCrosshair;
 
     private Image image;
 
@@ -15,7 +15,24 @@ public class InteractCrosshairUI : MonoBehaviour
 
     private void OnHoveredOverInteractable(Interactable i)
     {
-        image.sprite = interactCrosshair;
+        switch (i)
+        {
+            case Note n:
+                image.sprite = examineCrosshair;
+                break;
+            case Toggleable t:
+            case Door d:
+            case Drawer dr:
+                image.sprite = handCrosshair;
+                break;
+            default:
+                image.sprite = lookCrosshair;
+                break;
+        }
+
+        /*case Lockable: if locked sprite = lockCrosshair
+         * else sprite = handCrosshair
+         */
     }
 
     private void OnHoveredOffInteractable()
