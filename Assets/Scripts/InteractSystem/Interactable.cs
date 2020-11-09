@@ -4,7 +4,7 @@ public abstract class Interactable : MonoBehaviour
 {
     public bool displayTextOnHover = true;
 
-    public string textToDisplayOnHover;
+    public string nextHoverText;
 
     protected virtual void OnHoveredOver(Interactable i)
     {

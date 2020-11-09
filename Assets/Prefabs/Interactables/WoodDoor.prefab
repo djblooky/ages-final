@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e044ce62f4d72b4e857b730afb039c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: Open door
+  displayTextOnHover: 1
+  textToDisplayOnHover: 
 --- !u!65 &4920994556979446531
 BoxCollider:
   m_ObjectHideFlags: 0

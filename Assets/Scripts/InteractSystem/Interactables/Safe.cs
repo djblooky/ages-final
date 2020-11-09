@@ -34,11 +34,11 @@ public class Safe : Interactable
     {
         if (IsOpen)
         {
-            textToDisplayOnHover = "Close safe";
+            nextHoverText = "Close safe";
         }
         else
         {
-            textToDisplayOnHover = "Open safe";
+            nextHoverText = "Open safe";
         }
     }
 

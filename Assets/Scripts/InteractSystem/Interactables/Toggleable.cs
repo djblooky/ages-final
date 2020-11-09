@@ -15,6 +15,7 @@ public class Toggleable : Interactable
 
     protected override void OnHoveredOver(Interactable i)
     {
+        base.OnHoveredOver(i);
         SetHoverText();
     }
 
@@ -22,11 +23,11 @@ public class Toggleable : Interactable
     {
         if (isOn)
         {
-            textToDisplayOnHover = turnOffText;
+            nextHoverText = turnOffText;
         }
         else
         {
-            textToDisplayOnHover = turnOnText;
+            nextHoverText = turnOnText;
         }
     }
 

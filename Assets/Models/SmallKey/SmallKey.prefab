@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0049508d91b30142adfe33a4140dd45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: Pick up key
+  displayTextOnHover: 1
+  textToDisplayOnHover: Pick up key
 --- !u!1 &4304734472584538418
 GameObject:
   m_ObjectHideFlags: 0

@@ -120,9 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1316b647f159d2543a2555747327280b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: Read Note
-  noteImage: {fileID: 21300000, guid: d9611164fc53631479a3854f14a8ef5d, type: 3}
+  displayTextOnHover: 1
+  textToDisplayOnHover: Read note
+  noteText: 
 --- !u!1 &9100439749294014558
 GameObject:
   m_ObjectHideFlags: 0
