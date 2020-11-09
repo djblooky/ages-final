@@ -9825,6 +9825,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6b59d4b6f1ad34d95342b870efb039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultCrosshair: {fileID: 21300000, guid: d718746f4eaf7a84084cfe539db938c3, type: 3}
+  interactCrosshair: {fileID: 21300000, guid: 85d7d4cb57e493347be66d5025009081, type: 3}
 --- !u!43 &2047105492
 Mesh:
   m_ObjectHideFlags: 0
