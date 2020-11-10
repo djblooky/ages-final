@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  textToDisplayOnHover: Read note
+  nextHoverText: Read note
   noteText: 
 --- !u!1 &9100439749294014558
 GameObject:

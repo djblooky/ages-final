@@ -1,12 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Key : Interactable
 {
+    [SerializeField]
+    private GameObject objectToUnlock;
+
     public override void Interact()
     {
-        Door.isLocked = false;
+        objectToUnlock.GetComponentInChildren<Openable>().isLocked = false;
         Destroy(gameObject);
     }
 }

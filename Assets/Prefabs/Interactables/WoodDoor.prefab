@@ -347,7 +347,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  textToDisplayOnHover: 
+  nextHoverText: Open door
+  isLocked: 1
+  canBeClosed: 0
+  openText: Open door
+  closeText: Close door
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &4920994556979446531
 BoxCollider:
   m_ObjectHideFlags: 0

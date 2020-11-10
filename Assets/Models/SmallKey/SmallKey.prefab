@@ -139,7 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  textToDisplayOnHover: Pick up key
+  nextHoverText: Pick up key
+  objectToUnlock: {fileID: 0}
 --- !u!1 &4304734472584538418
 GameObject:
   m_ObjectHideFlags: 0

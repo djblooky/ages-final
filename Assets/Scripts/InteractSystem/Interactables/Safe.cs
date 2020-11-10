@@ -1,63 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Safe : Interactable
+public class Safe : Openable
 {
-
-    private Animator animator;
-    private readonly int isOpenAnimatorParam = Animator.StringToHash("isOpen");
-
-    private bool isOpen = false;
-    private bool IsOpen
-    {
-        get { return isOpen; }
-
-        set
-        {
-            animator.SetBool(isOpenAnimatorParam, value);
-            isOpen = value;
-        }
-    }
-
     private void Start()
     {
         animator = GetComponentInParent<Animator>();
-    }
-
-    protected override void OnHoveredOver(Interactable i)
-    {
-        SetSafeHoverText();
-    }
-
-    private void SetSafeHoverText()
-    {
-        if (IsOpen)
-        {
-            nextHoverText = "Close safe";
-        }
-        else
-        {
-            nextHoverText = "Open safe";
-        }
+        audioSource = GetComponent<AudioSource>();
     }
 
     public override void Interact()
     {
-        ToggleSafe();
+        base.Interact();
+        Debug.Log("Opened safe UI");
     }
-
-    private void ToggleSafe()
-    {
-        if (IsOpen)
-        {
-            IsOpen = false;
-        }
-        else
-        {
-            IsOpen = true;
-        }
-    }
-
-
 }

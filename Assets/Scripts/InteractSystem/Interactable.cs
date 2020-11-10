@@ -8,7 +8,7 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void OnHoveredOver(Interactable i)
     {
-        Debug.Log("Hovered over " + i);
+        //Debug.Log("Hovered over " + i);
     }
 
     protected virtual void OnHoveredOff()

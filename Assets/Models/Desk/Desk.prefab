@@ -991,8 +991,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!95 &7548402081435206406
 Animator:
   serializedVersion: 3
@@ -3184,8 +3193,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &4419007520478483892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,8 +3490,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &7464467850757635167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4388,8 +4415,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &5937130705054185073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,8 +4772,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!95 &7479211674963942491
 Animator:
   serializedVersion: 3
@@ -4987,8 +5032,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &6716770247546091591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,8 +5248,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &23813086563193123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5971,8 +6034,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &6311222311693483404
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6724,8 +6796,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &2742555903155952397
 BoxCollider:
   m_ObjectHideFlags: 0
