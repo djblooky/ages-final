@@ -183,36 +183,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 2690585570125944547, guid: 1b969607c247b7d4fb42fe9bae645466,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2690585570125944547, guid: 1b969607c247b7d4fb42fe9bae645466,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 21.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 2690585570125944547, guid: 1b969607c247b7d4fb42fe9bae645466,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2690585570125944547, guid: 1b969607c247b7d4fb42fe9bae645466,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.019531252
-      objectReference: {fileID: 0}
-    - target: {fileID: 2690585570125944547, guid: 1b969607c247b7d4fb42fe9bae645466,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.01953125
-      objectReference: {fileID: 0}
-    - target: {fileID: 2690585570125944547, guid: 1b969607c247b7d4fb42fe9bae645466,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.019531252
-      objectReference: {fileID: 0}
     - target: {fileID: 2787339891453919864, guid: 1b969607c247b7d4fb42fe9bae645466,
         type: 3}
       propertyPath: m_StaticEditorFlags
