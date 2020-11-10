@@ -8,6 +8,12 @@ public class Toggleable : Interactable
     [SerializeField]
     private string turnOnText = "Turn on", turnOffText = "Turn off";
 
+    [SerializeField]
+    private AudioClip switchSound;
+
+    [SerializeField]
+    private AudioSource audioSource;
+
     public override void Interact()
     {
         Toggle();
@@ -33,13 +39,10 @@ public class Toggleable : Interactable
 
     private void Toggle()
     {
+        audioSource.PlayOneShot(switchSound);
         if (isOn)
-        {
             isOn = false;
-        }
         else
-        {
             isOn = true;
-        }
     }
 }

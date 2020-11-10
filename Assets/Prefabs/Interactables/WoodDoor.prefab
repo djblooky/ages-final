@@ -353,7 +353,7 @@ MonoBehaviour:
   canBeClosed: 0
   openText: Open door
   closeText: Close door
-  openSound: {fileID: 0}
+  openSound: {fileID: 8300000, guid: 68c67e0b09c0c0b49af29311efb3e730, type: 3}
   closeSound: {fileID: 0}
   lockSound: {fileID: 8300000, guid: c022e576272b9cd499325f9c0e57c413, type: 3}
   animator: {fileID: 0}

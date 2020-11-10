@@ -5,9 +5,23 @@ public class Key : Interactable
     [SerializeField]
     private GameObject objectToUnlock;
 
+    [SerializeField]
+    private AudioClip pickupSound;
+
+    private AudioSource audioSource;
+    private MeshRenderer meshRenderer;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
+
     public override void Interact()
     {
+        audioSource.PlayOneShot(pickupSound);
         objectToUnlock.GetComponentInChildren<Openable>().isLocked = false;
-        Destroy(gameObject);
+        meshRenderer.enabled = false;
+        Destroy(gameObject, pickupSound.length);
     }
 }
