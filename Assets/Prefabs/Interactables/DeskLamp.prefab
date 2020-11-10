@@ -344,8 +344,8 @@ MonoBehaviour:
   displayTextOnHover: 1
   nextHoverText: 
   isOn: 1
-  turnOnText: Turn on lamp
-  turnOffText: Turn off lamp
+  turnOnText: Turn on desk lamp
+  turnOffText: Turn off desk lamp
   light: {fileID: 1991241297008423876}
 --- !u!65 &5360405465498150021
 BoxCollider:

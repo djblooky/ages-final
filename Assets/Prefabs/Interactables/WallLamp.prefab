@@ -170,8 +170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba2f4d5502344b4bb46e636eb41156a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isOn: 1
+  turnOnText: Turn on wall lamp
+  turnOffText: Turn off wall lamp
   light: {fileID: 2529573051481234720}
 --- !u!65 &3900614505539614140
 BoxCollider:
