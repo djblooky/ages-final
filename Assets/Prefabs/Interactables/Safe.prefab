@@ -467,7 +467,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8054740491399791198}
-  - component: {fileID: 1189407665136406847}
   m_Layer: 0
   m_Name: Door_Handle
   m_TagString: Untagged
@@ -490,19 +489,6 @@ Transform:
   m_Father: {fileID: 4087506183372647934}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1189407665136406847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6572499201141871323}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e1637f61524405489dc5e650cde9b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 20
 --- !u!1 &7007585109099822885
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,8 +595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e7db76da0f9c445a2bab82885a4b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
 --- !u!1 &7738831498954939337
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,8 +654,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7945382680477820292}
   m_LocalRotation: {x: 0, y: 0, z: -0, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.7148, y: 15.064, z: 12.681}
+  m_LocalScale: {x: 1.4141, y: 1.4141, z: 1.4141}
   m_Children: []
   m_Father: {fileID: 5546531844166412364}
   m_RootOrder: 0
@@ -775,7 +761,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9155154719990973159}
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 19.138393, y: -23.572235, z: -28.527365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -784,4 +770,4 @@ Transform:
   - {fileID: 288144769432419797}
   m_Father: {fileID: 1192048650689677013}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
