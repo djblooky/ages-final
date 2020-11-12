@@ -16,6 +16,11 @@ PrefabInstance:
 
         Don''t trust the room.'
       objectReference: {fileID: 0}
+    - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: displayTextOnHover
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_LocalPosition.x

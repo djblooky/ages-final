@@ -15,8 +15,11 @@ public class InteractText : MonoBehaviour
 
     private void OnHoveredOverInteractable(Interactable i)
     {
-        textComponent.text = i.interactText;
-        canvasGroup.alpha = 1;
+        if (i.displayTextOnHover)
+        {
+            textComponent.text = i.nextHoverText;
+            canvasGroup.alpha = 1;
+        }
     }
 
     private void OnHoveredOffInteractable()

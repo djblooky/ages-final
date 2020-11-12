@@ -1,32 +1,19 @@
 ﻿using UnityEngine;
 
-public abstract class Interactable : MonoBehaviour
+public class Interactable : MonoBehaviour
 {
-    [SerializeField]
-    private Color hoverColor;
+    public bool displayTextOnHover = true;
 
-    [SerializeField]
-    public string interactText;
-
-    protected MeshRenderer meshRenderer;
-    protected Color defaultColor;
-
-    private void Start()
-    {
-        if (hoverColor == null)
-            hoverColor = Color.white;
-
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
+    public string nextHoverText;
 
     protected virtual void OnHoveredOver(Interactable i)
     {
-        //i.meshRenderer.material.color = hoverColor;
+        //Debug.Log("Hovered over " + i);
     }
 
     protected virtual void OnHoveredOff()
     {
-        // i.meshRenderer.material.color = defaultColor;
+        
     }
 
     public virtual void Interact()

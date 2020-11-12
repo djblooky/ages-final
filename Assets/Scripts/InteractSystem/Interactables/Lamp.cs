@@ -1,41 +1,25 @@
 ﻿using UnityEngine;
 
-public class Lamp : Interactable
+public class Lamp : Toggleable
 {
     [SerializeField]
     private Light light;
 
     public override void Interact()
     {
+        base.Interact();
         ToggleLight();
-    }
-
-    protected override void OnHoveredOver(Interactable i)
-    {
-        SetLightHoverText();
-    }
-
-    private void SetLightHoverText()
-    {
-        if (light.enabled)
-        {
-            interactText = "Turn light off";
-        }
-        else
-        {
-            interactText = "Turn light on";
-        }
     }
 
     private void ToggleLight()
     {
-        if (light.enabled)
+        if (isOn)
         {
-            light.enabled = false;
+            light.enabled = true;
         }
         else
         {
-            light.enabled = true;
+            light.enabled = false;
         }
     }
 }

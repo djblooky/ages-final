@@ -991,8 +991,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!95 &7548402081435206406
 Animator:
   serializedVersion: 3
@@ -3184,8 +3193,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &4419007520478483892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,8 +3490,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &7464467850757635167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4388,8 +4415,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &5937130705054185073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,8 +4772,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!95 &7479211674963942491
 Animator:
   serializedVersion: 3
@@ -4848,6 +4893,7 @@ GameObject:
   - component: {fileID: 2903059449709032663}
   - component: {fileID: 6763589045716356105}
   - component: {fileID: 4830863471130850359}
+  - component: {fileID: 7771311267559330543}
   m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Interactable
@@ -4987,8 +5033,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 8300000, guid: 55c6d3b6b1ec02e48bd936982b0c11ca, type: 3}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 7771311267559330543}
+--- !u!82 &7771311267559330543
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586694852855730494}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6716770247546091591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,8 +5345,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &23813086563193123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5971,8 +6131,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &6311222311693483404
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6724,8 +6893,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e375f72da342d4a845826a08b15e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0, b: 0, a: 0}
-  interactText: 
+  displayTextOnHover: 1
+  nextHoverText: 
+  isLocked: 0
+  canBeClosed: 1
+  openText: Open
+  closeText: Close
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  lockSound: {fileID: 0}
+  animator: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!65 &2742555903155952397
 BoxCollider:
   m_ObjectHideFlags: 0

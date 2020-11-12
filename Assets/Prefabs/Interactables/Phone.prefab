@@ -133,9 +133,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2690585570125944547}
+  - component: {fileID: 6788860215032577496}
+  - component: {fileID: 6389233779741258068}
   m_Layer: 0
   m_Name: Phone
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,12 +151,39 @@ Transform:
   m_GameObject: {fileID: 3121712138715228561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.019531252, y: 0.01953125, z: 0.019531252}
   m_Children:
   - {fileID: 1201668454513746671}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 21.68, z: 0}
+--- !u!65 &6788860215032577496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3121712138715228561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.521326, y: 9.204242, z: 23.66967}
+  m_Center: {x: -6.640191, y: 4.102121, z: -3.6372862}
+--- !u!114 &6389233779741258068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3121712138715228561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeff01be1b6e7ae4d81d496c8ca58537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTextOnHover: 1
+  nextHoverText: the phone is off the hook
 --- !u!1 &5240502710787904654
 GameObject:
   m_ObjectHideFlags: 0

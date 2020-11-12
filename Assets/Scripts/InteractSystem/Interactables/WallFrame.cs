@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WallFrame : Interactable
 {
     private Rigidbody rigidBody;
 
-    void Start()
+    private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
     }
@@ -14,5 +12,6 @@ public class WallFrame : Interactable
     public override void Interact()
     {
         rigidBody.useGravity = true;
+        tag = "Untagged";
     }
 }
