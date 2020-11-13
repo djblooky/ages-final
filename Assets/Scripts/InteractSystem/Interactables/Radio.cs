@@ -2,8 +2,6 @@
 
 public class Radio : Toggleable
 {
-    private AudioSource audioSource;
-
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();

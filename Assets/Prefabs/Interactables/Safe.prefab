@@ -137,8 +137,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3194951045162230643}
   m_LocalRotation: {x: 0, y: 0, z: -0, w: -1}
-  m_LocalPosition: {x: 1.5662079, y: -12.801886, z: -3.7625523}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.5111184, y: -12.800005, z: -3.760023}
+  m_LocalScale: {x: 1.125, y: 1.125, z: 1.125}
   m_Children:
   - {fileID: 5546531844166412364}
   m_Father: {fileID: 4087506183372647934}
@@ -598,15 +598,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
   nextHoverText: Open safe
-  isLocked: 0
-  canBeClosed: 1
+  audioSource: {fileID: 7620321295023059225}
+  isLocked: 1
+  canBeClosed: 0
   openText: Open safe
   closeText: Close safe
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
   lockSound: {fileID: 0}
   animator: {fileID: 0}
-  audioSource: {fileID: 0}
+  safeLock: {fileID: 0}
+  safeSolutionNum1: 0
+  safeSolutionNum2: 0
+  safeSolutionNum3: 0
 --- !u!82 &7620321295023059225
 AudioSource:
   m_ObjectHideFlags: 0
@@ -618,7 +622,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

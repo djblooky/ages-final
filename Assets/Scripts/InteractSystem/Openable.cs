@@ -13,6 +13,7 @@ public class Openable : Interactable
         }
     }
 
+    [Header("Openable.cs")]
     [SerializeField]
     public bool isLocked = false;
 
@@ -27,9 +28,6 @@ public class Openable : Interactable
 
     [SerializeField]
     protected Animator animator;
-
-    [SerializeField]
-    protected AudioSource audioSource;
 
     protected bool isOpen = false;
     private readonly int isOpenAnimatorParam = Animator.StringToHash("isOpen");

@@ -8,7 +8,6 @@ public class Key : Interactable
     [SerializeField]
     private AudioClip pickupSound;
 
-    private AudioSource audioSource;
     private MeshRenderer meshRenderer;
 
     private void Start()
