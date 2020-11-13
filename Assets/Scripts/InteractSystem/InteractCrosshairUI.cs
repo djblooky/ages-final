@@ -21,18 +21,13 @@ public class InteractCrosshairUI : MonoBehaviour
                 image.sprite = examineCrosshair;
                 break;
             case Toggleable t:
-            case Door d:
-            case Drawer dr:
+            case Openable o:
                 image.sprite = handCrosshair;
                 break;
             default:
                 image.sprite = lookCrosshair;
                 break;
         }
-
-        /*case Lockable: if locked sprite = lockCrosshair
-         * else sprite = handCrosshair
-         */
     }
 
     private void OnHoveredOffInteractable()
