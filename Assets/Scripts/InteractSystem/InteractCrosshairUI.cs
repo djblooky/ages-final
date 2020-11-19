@@ -6,26 +6,34 @@ public class InteractCrosshairUI : MonoBehaviour
     [SerializeField]
     private Sprite defaultCrosshair, examineCrosshair, handCrosshair, lookCrosshair;
 
+    [SerializeField]
+    private float defaultScale = 5, examineScale, handScale, lookScale;
+
     private Image image;
+    private RectTransform rectTransform;
 
     private void Start()
     {
         image = GetComponent<Image>();
+        rectTransform = GetComponent<RectTransform>();
     }
 
-    private void OnHoveredOverInteractable(Interactable i)
+    private void OnHoveredOverInteractable(Interactable mousedOver)
     {
-        switch (i)
+        switch (mousedOver)
         {
             case Note n:
                 image.sprite = examineCrosshair;
+                SetScale(examineScale);
                 break;
             case Toggleable t:
             case Openable o:
                 image.sprite = handCrosshair;
+                SetScale(handScale);
                 break;
             default:
-                image.sprite = lookCrosshair;
+                image.sprite = defaultCrosshair;
+                SetScale(defaultScale);
                 break;
         }
     }
@@ -33,6 +41,12 @@ public class InteractCrosshairUI : MonoBehaviour
     private void OnHoveredOffInteractable()
     {
         image.sprite = defaultCrosshair;
+        SetScale(defaultScale);
+    }
+
+    private void SetScale(float f)
+    {
+        rectTransform.sizeDelta = new Vector2(f, f);
     }
 
     private void OnEnable()

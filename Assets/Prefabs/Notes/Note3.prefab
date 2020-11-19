@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4385910414144196165
+--- !u!1001 &5911960743109624125
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,22 +10,38 @@ PrefabInstance:
     - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: noteText
-      value: There is something hidden in this room, can you find it?
+      value: 'I''m always forgetting how to score darts so hopefully these notes
+        will help me remember...
+
+
+        The amount of points for each throw corresponds
+        to the number in the dart''s wedge
+
+
+        The black and white rings are
+        worth single points
+
+
+        The outer colored ring is double points
+
+
+        The
+        inner colored ring is triple points'
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.21760884
+      value: -0.16898118
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21250007
+      value: -0.12575
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6196574
+      value: -0.63667214
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
@@ -35,7 +51,7 @@ PrefabInstance:
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.987234
+      value: -0.3073299
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
@@ -45,7 +61,7 @@ PrefabInstance:
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.15927647
+      value: 0.95160306
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
@@ -54,39 +70,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0125
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
-      propertyPath: m_LocalScale.y
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -35.797
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
+        type: 3}
+      propertyPath: m_LocalScale.x
       value: 0.012499999
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0125
+      propertyPath: m_LocalScale.y
+      value: 0.012499997
       objectReference: {fileID: 0}
-    - target: {fileID: 1552958972551290235, guid: eefc6f74682647c47bd8121b0a83e663,
+    - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
-      propertyPath: noteImage
-      value: 
-      objectReference: {fileID: 21300000, guid: d9611164fc53631479a3854f14a8ef5d,
-        type: 3}
-    - target: {fileID: 1552958972551290235, guid: eefc6f74682647c47bd8121b0a83e663,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: m_LocalScale.z
+      value: 0.012499997
       objectReference: {fileID: 0}
     - target: {fileID: 5642427898180797362, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: m_Name
-      value: Note2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5642427898180797362, guid: eefc6f74682647c47bd8121b0a83e663,
-        type: 3}
-      propertyPath: m_TagString
-      value: Interactable
+      value: Note3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eefc6f74682647c47bd8121b0a83e663, type: 3}

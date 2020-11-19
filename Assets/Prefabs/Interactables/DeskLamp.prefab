@@ -344,11 +344,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
   nextHoverText: 
-  isOn: 1
-  turnOnText: Turn on desk lamp
-  turnOffText: Turn off desk lamp
-  switchSound: {fileID: 8300000, guid: d06b1cc9059671f41afeadc2cd1ae9f7, type: 3}
   audioSource: {fileID: 9115177298246175491}
+  isOn: 1
+  turnOnText: turn on desk lamp
+  turnOffText: turn off desk lamp
+  switchSound: {fileID: 8300000, guid: d06b1cc9059671f41afeadc2cd1ae9f7, type: 3}
   light: {fileID: 1991241297008423876}
 --- !u!65 &5360405465498150021
 BoxCollider:
