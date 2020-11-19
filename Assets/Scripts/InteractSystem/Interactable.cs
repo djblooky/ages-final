@@ -2,9 +2,12 @@
 
 public class Interactable : MonoBehaviour
 {
+    [Header("Interactable.cs")]
     public bool displayTextOnHover = true;
-
     public string nextHoverText;
+
+    [SerializeField]
+    protected AudioSource audioSource;
 
     protected virtual void OnHoveredOver(Interactable i)
     {

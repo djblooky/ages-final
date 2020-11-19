@@ -2,6 +2,7 @@
 
 public class Toggleable : Interactable
 {
+    [Header("Toggleable.cs")]
     [SerializeField]
     protected bool isOn;
 
@@ -10,9 +11,6 @@ public class Toggleable : Interactable
 
     [SerializeField]
     private AudioClip switchSound;
-
-    [SerializeField]
-    private AudioSource audioSource;
 
     public override void Interact()
     {

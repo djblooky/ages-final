@@ -25,11 +25,15 @@ public class NoteUI : MonoBehaviour
 
     private void OnOpenedNote(string text)
     {
+        inputHandler.ResetInputData();
         inputHandler.enabled = false;
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
+        
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         noteText.text = text;
     }
 
@@ -37,8 +41,10 @@ public class NoteUI : MonoBehaviour
     public void CloseNote()
     {
         inputHandler.enabled = true;
+
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
