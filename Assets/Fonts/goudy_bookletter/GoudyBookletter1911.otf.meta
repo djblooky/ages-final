@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a4c8c7a3fa802d4d9f54aa19eb91b5c
+guid: ce3d66b95ef1a2b4b8c00f92d879438b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: PixelPlay
+  fontName: Goudy Bookletter 1911
   fontNames:
-  - PixelPlay
+  - Goudy Bookletter 1911
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

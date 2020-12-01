@@ -71,6 +71,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5390912663993984307}
+  - component: {fileID: 6964860293415803023}
+  - component: {fileID: 4857427244921204624}
   m_Layer: 0
   m_Name: Box
   m_TagString: Interactable
@@ -93,6 +95,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!65 &6964860293415803023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895934085304713824}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8342149, y: 0.9532138, z: 1.0350455}
+  m_Center: {x: 0.0061354935, y: -0.5233937, z: 0.04831052}
+--- !u!114 &4857427244921204624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895934085304713824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5162a73b7e162642b77d93ae5162998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTextOnHover: 1
+  interactText: 
+  objectName: Strange Box
+  audioSource: {fileID: 0}
 --- !u!1 &1145170556078954057
 GameObject:
   m_ObjectHideFlags: 0

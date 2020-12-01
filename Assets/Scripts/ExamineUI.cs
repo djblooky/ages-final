@@ -1,14 +1,14 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
 using VHS;
 
-public class NoteUI : MonoBehaviour
+public class ExamineUI : MonoBehaviour
 {
+    [SerializeField] private Camera camera;
     [SerializeField] private InputHandler inputHandler;
-    [SerializeField] private Image noteImage;
-    [SerializeField] private TMP_Text noteText;
-
+    [SerializeField] private TMP_Text objectName, objectText;
+    
     private CanvasGroup canvasGroup;
 
     private void Start()
@@ -18,39 +18,39 @@ public class NoteUI : MonoBehaviour
         canvasGroup.interactable = false;
     }
 
-    private void OnOpenedNote(string text)
+    private void OnExamined(string objectName, string interactText)
     {
         inputHandler.ResetInputData();
         inputHandler.enabled = false;
-        
+
+        objectText.text = interactText;
+        this.objectName.text = objectName;
+
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
-        noteText.text = text;
     }
 
-    // links to button event
-    public void CloseNote()
+    //to do: hook up close
+    private void CloseExamineUI()
     {
         inputHandler.enabled = true;
-
-        canvasGroup.alpha = 0;
-        canvasGroup.interactable = false;
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        camera.targetTexture = null;
+        //lock cursor
+        //hide UI
+        
     }
 
     private void OnEnable()
     {
-        Note.OpenedNote += OnOpenedNote;
+        Examinable.ExaminedObject += OnExamined;
     }
 
     private void OnDisable()
     {
-        Note.OpenedNote -= OnOpenedNote;
+        Examinable.ExaminedObject -= OnExamined;
     }
+
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+[RequireComponent(typeof(RotateObjectWithMouse))]
 public class Examinable : Interactable
 {
     public static event Action<string, string> ExaminedObject;
@@ -16,6 +17,7 @@ public class Examinable : Interactable
     public override void Interact()
     {
         base.Interact();
+        GetComponent<RotateObjectWithMouse>().enabled = true;
         ExaminedObject?.Invoke(objectName, interactText);
     }
 
