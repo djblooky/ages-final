@@ -2,18 +2,8 @@
 
 public class RotateObjectWithMouse : MonoBehaviour
 {
-    [SerializeField] Camera camera;
-    [SerializeField]Vector3 examineRotation;
-    [SerializeField] float distanceFromCameraOffset = 0.5f;
-
     private Vector3 lastFramePosition = Vector3.zero;
     private Vector3 deltaPosition = Vector3.zero;
-    private Vector3 defaultPos;
-
-    private void Start()
-    {
-        defaultPos = transform.position;
-    }
 
     private void Update()
     {
@@ -34,12 +24,11 @@ public class RotateObjectWithMouse : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.position = camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, Camera.main.nearClipPlane + distanceFromCameraOffset));
-        transform.rotation = Quaternion.Euler(examineRotation);
+        
     }
 
     private void OnDisable()
     {
-        transform.position = defaultPos;
+        
     }
 }

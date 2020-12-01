@@ -1,22 +1,12 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using VHS;
 
 public class ExamineUI : MonoBehaviour
 {
-    [SerializeField] private Camera camera;
+    [SerializeField] private GameObject examineCamera;
     [SerializeField] private InputHandler inputHandler;
     [SerializeField] private TMP_Text objectName, objectText;
-    
-    private CanvasGroup canvasGroup;
-
-    private void Start()
-    {
-        canvasGroup = GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0;
-        canvasGroup.interactable = false;
-    }
 
     private void OnExamined(string objectName, string interactText)
     {
@@ -26,21 +16,21 @@ public class ExamineUI : MonoBehaviour
         objectText.text = interactText;
         this.objectName.text = objectName;
 
-        canvasGroup.alpha = 1;
-        canvasGroup.interactable = true;
+        examineCamera.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
-    //to do: hook up close
-    private void CloseExamineUI()
+    //hooks up to button
+    public void CloseExamineUI()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        examineCamera.SetActive(false);
+
         inputHandler.enabled = true;
-        camera.targetTexture = null;
-        //lock cursor
-        //hide UI
-        
     }
 
     private void OnEnable()
