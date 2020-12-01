@@ -49,11 +49,11 @@ public class Openable : Interactable
     {
         if (IsOpen)
         {
-            nextHoverText = closeText;
+            interactText = closeText;
         }
         else
         {
-            nextHoverText = openText;
+            interactText = openText;
         }
     }
 
@@ -61,7 +61,7 @@ public class Openable : Interactable
     {
         if (isLocked)
         {
-            nextHoverText = "Locked";
+            interactText = "Locked";
             audioSource.PlayOneShot(lockSound);
         }
         else

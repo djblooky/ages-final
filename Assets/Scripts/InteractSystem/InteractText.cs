@@ -17,7 +17,7 @@ public class InteractText : MonoBehaviour
     {
         if (i.displayTextOnHover)
         {
-            textComponent.text = i.nextHoverText;
+            textComponent.text = i.interactText;
             canvasGroup.alpha = 1;
         }
     }

@@ -607,7 +607,9 @@ MonoBehaviour:
   closeSound: {fileID: 0}
   lockSound: {fileID: 0}
   animator: {fileID: 0}
-  safeLock: {fileID: 0}
+  inputHandler: {fileID: 0}
+  safeLock: {fileID: 288144769432419797}
+  safeUIPanel: {fileID: 0}
   safeSolutionNum1: 0
   safeSolutionNum2: 0
   safeSolutionNum3: 0

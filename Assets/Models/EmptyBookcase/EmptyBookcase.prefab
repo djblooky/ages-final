@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 8808932898714753634}
   - component: {fileID: 1788000209010223709}
   - component: {fileID: 8766430025287879310}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: polySurface17_lambert1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

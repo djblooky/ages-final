@@ -4,10 +4,10 @@ public class Interactable : MonoBehaviour
 {
     [Header("Interactable.cs")]
     public bool displayTextOnHover = true;
-    public string nextHoverText;
+    public string interactText;
 
-    [SerializeField]
-    protected AudioSource audioSource;
+    [SerializeField] protected string objectName;
+    [SerializeField] protected AudioSource audioSource;
 
     protected virtual void OnHoveredOver(Interactable i)
     {
@@ -21,7 +21,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log($"Interacted with {gameObject}");
+        Debug.Log($"Interacted with {objectName}");
     }
 
     private void OnEnable()
