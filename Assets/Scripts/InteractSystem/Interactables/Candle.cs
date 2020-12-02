@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-public class Candle : Toggleable
+public class Candle : Interactable
 {
-    public bool CanBeLit = false;
+    private bool canBeLit = false;
 
     [SerializeField]
     private ParticleSystem flameParticle;
@@ -15,13 +15,24 @@ public class Candle : Toggleable
 
     private void ToggleCandle()
     {
-        if (isOn)
+        if (canBeLit)
         {
             flameParticle.Play();
         }
-        else
-        {
-            flameParticle.Stop();
-        }
+    }
+
+    private void OnCollectedMatches()
+    {
+        canBeLit = true;
+    }
+
+    private void OnEnable()
+    {
+        Matches.CollectedMatches += OnCollectedMatches;
+    }
+
+    private void OnDisable()
+    {
+        Matches.CollectedMatches -= OnCollectedMatches;
     }
 }
