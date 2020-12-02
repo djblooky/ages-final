@@ -9121,6 +9121,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PictureFrame1
       objectReference: {fileID: 0}
+    - target: {fileID: 4472733575503360831, guid: 3cd004d79365533498568646b3c30d2f,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918159271921052873, guid: 3cd004d79365533498568646b3c30d2f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cd004d79365533498568646b3c30d2f, type: 3}
 --- !u!4 &1453129224 stripped

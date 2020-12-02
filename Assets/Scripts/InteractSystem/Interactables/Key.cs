@@ -13,7 +13,7 @@ public class Key : Interactable
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
     public override void Interact()
