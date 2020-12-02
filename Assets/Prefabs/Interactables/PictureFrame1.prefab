@@ -156,7 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: an interesting, abstract painting
+  interactText: an interesting abstract painting
+  objectName: abstract painting
+  audioSource: {fileID: 0}
 --- !u!1 &3579411692949667701
 GameObject:
   m_ObjectHideFlags: 0
