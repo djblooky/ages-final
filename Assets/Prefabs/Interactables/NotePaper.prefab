@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: read note
+  interactText: read note
+  objectName: note
   audioSource: {fileID: 0}
   noteText: 
 --- !u!1 &9100439749294014558
