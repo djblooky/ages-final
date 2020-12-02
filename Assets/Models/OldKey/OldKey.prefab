@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3795692085243320265}
   - component: {fileID: 9200606894961911322}
+  - component: {fileID: 8601573064295969684}
   m_Layer: 0
   m_Name: OldKey
   m_TagString: Interactable
@@ -107,11 +108,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  interactText: 
-  objectName: 
+  interactText: an old looking key
+  objectName: key
   audioSource: {fileID: 0}
   objectToUnlock: {fileID: 0}
   pickupSound: {fileID: 0}
+--- !u!65 &8601573064295969684
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2802022243828412896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 767.5699, y: 274.7177, z: 64.938545}
+  m_Center: {x: 16.66228, y: -1.0380747, z: 2.3354726}
 --- !u!1 &3892541977673171720
 GameObject:
   m_ObjectHideFlags: 0

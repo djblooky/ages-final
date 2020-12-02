@@ -4,7 +4,7 @@ public class Interactable : MonoBehaviour
 {
     [Header("Interactable.cs")]
     public bool displayTextOnHover = true;
-    public string interactText;
+    public string hoverText;
 
     [SerializeField] protected string objectName;
     [SerializeField] protected AudioSource audioSource;

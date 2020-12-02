@@ -23,11 +23,14 @@ public class InteractCrosshairUI : MonoBehaviour
         switch (mousedOver)
         {
             case Note n:
+            case Examinable e:
                 image.sprite = examineCrosshair;
                 SetScale(examineScale);
                 break;
             case Toggleable t:
             case Openable o:
+            case Matches m:
+            case Key k:
                 image.sprite = handCrosshair;
                 SetScale(handScale);
                 break;

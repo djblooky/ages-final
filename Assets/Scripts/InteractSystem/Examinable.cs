@@ -18,7 +18,7 @@ public class Examinable : Interactable
     {
         base.Interact();
         GetComponent<RotateObjectWithMouse>().enabled = true;
-        ExaminedObject?.Invoke(objectName, interactText);
+        ExaminedObject?.Invoke(objectName, hoverText);
     }
 
   

@@ -1,14 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Firewood : Interactable
 {
-    [SerializeField]
-    private ParticleSystem flameParticles;
-
-    [SerializeField]
-    private float logBurningDuration = 3f;
+    //[SerializeField] private ParticleSystem dissolveParticles;
+    [SerializeField] private ParticleSystem flameParticles;
+    [SerializeField] private float logBurningDuration = 3f;
+    [SerializeField] private string litFireText;
 
     private bool canBeLit = false;
 
@@ -17,21 +15,22 @@ public class Firewood : Interactable
         base.Interact();
         if (canBeLit)
         {
-            //play fire crackling sound
+            hoverText = litFireText;
+            audioSource.Play();
             flameParticles.Play();
             StartCoroutine(BurnOutLogsAfterDelay());
         }
     }
 
-    IEnumerator BurnOutLogsAfterDelay()
+    private IEnumerator BurnOutLogsAfterDelay()
     {
         yield return new WaitForSeconds(logBurningDuration);
-        //play extinguish sound
+        audioSource.Stop(); //polish: play extinguish sound
         flameParticles.Stop();
-        Destroy(gameObject);
+        Destroy(transform.root.gameObject);
     }
 
-    void OnCollectedMatches()
+    private void OnCollectedMatches()
     {
         canBeLit = true;
     }

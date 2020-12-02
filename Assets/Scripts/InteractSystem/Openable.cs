@@ -49,11 +49,11 @@ public class Openable : Interactable
     {
         if (IsOpen)
         {
-            interactText = closeText + " " + objectName;
+            hoverText = closeText + " " + objectName;
         }
         else
         {
-            interactText = openText + " " + objectName;
+            hoverText = openText + " " + objectName;
         }
     }
 
@@ -61,7 +61,7 @@ public class Openable : Interactable
     {
         if (isLocked)
         {
-            interactText = "Locked";
+            hoverText = "Locked";
             audioSource.PlayOneShot(lockSound);
         }
         else
