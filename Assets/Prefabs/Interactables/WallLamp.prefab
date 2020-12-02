@@ -172,12 +172,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: 
+  interactText: 
+  objectName: wall lamp
+  audioSource: {fileID: 308034499851384850}
   isOn: 1
   turnOnText: Turn on wall lamp
   turnOffText: Turn off wall lamp
   switchSound: {fileID: 8300000, guid: d06b1cc9059671f41afeadc2cd1ae9f7, type: 3}
-  audioSource: {fileID: 308034499851384850}
   light: {fileID: 2529573051481234720}
 --- !u!65 &3900614505539614140
 BoxCollider:

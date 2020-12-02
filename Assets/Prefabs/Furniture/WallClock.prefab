@@ -912,7 +912,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: the clock is ticking
+  interactText: the clock is ticking
+  objectName: clock
+  audioSource: {fileID: 0}
 --- !u!65 &7239874564580034259
 BoxCollider:
   m_ObjectHideFlags: 0

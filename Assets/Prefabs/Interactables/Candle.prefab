@@ -5125,10 +5125,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: 
+  interactText: an old candle
+  objectName: candle
+  audioSource: {fileID: 0}
   isOn: 0
   turnOnText: Light candle
   turnOffText: Put out candle
+  switchSound: {fileID: 0}
+  CanBeLit: 0
   flameParticle: {fileID: 2011684213116329682}
 --- !u!65 &2188103517969918888
 BoxCollider:

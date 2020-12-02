@@ -183,7 +183,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: the phone is off the hook
+  interactText: the phone is off the hook
+  objectName: phone
+  audioSource: {fileID: 0}
 --- !u!1 &5240502710787904654
 GameObject:
   m_ObjectHideFlags: 0

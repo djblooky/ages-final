@@ -2,6 +2,8 @@
 
 public class Candle : Toggleable
 {
+    public bool CanBeLit = false;
+
     [SerializeField]
     private ParticleSystem flameParticle;
 
