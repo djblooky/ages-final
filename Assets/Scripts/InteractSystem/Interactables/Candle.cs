@@ -4,19 +4,15 @@ public class Candle : Interactable
 {
     private bool canBeLit = false;
 
-    [SerializeField]
-    private ParticleSystem flameParticle;
+    [SerializeField] private ParticleSystem flameParticle;
+    [SerializeField] private string litCandleText;
 
     public override void Interact()
     {
         base.Interact();
-        ToggleCandle();
-    }
-
-    private void ToggleCandle()
-    {
         if (canBeLit)
         {
+            hoverText = litCandleText;
             flameParticle.Play();
         }
     }

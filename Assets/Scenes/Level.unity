@@ -9935,6 +9935,7 @@ GameObject:
   - component: {fileID: 1719938015}
   - component: {fileID: 1719938017}
   - component: {fileID: 1719938016}
+  - component: {fileID: 1719938018}
   m_Layer: 0
   m_Name: prop_books_02_inst_001_prop_books_01_mt_0 (1)
   m_TagString: Untagged
@@ -10002,6 +10003,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719938014}
+  m_Mesh: {fileID: 4300000, guid: d5ee1377a0686564e8f32d6bd789371a, type: 2}
+--- !u!64 &1719938018
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719938014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d5ee1377a0686564e8f32d6bd789371a, type: 2}
 --- !u!1001 &1723061728
 PrefabInstance:
@@ -11616,36 +11631,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1875
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1875
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1875
       objectReference: {fileID: 0}
     - target: {fileID: 7952382871609178948, guid: 5c3b36781f914c246b2549b85b6ca7f0,
         type: 3}
