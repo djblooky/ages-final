@@ -1,13 +1,10 @@
 ﻿using System;
 using UnityEngine;
 
-[RequireComponent(typeof(RotateObjectWithMouse))]
+//[RequireComponent(typeof(RotateObjectWithMouse))]
 public class Examinable : Interactable
 {
     public static event Action<string, string> ExaminedObject;
-
-    [Header("Examinable.cs")]
-    private bool isBeingExamined = false;
 
     private void Start()
     {
@@ -17,9 +14,10 @@ public class Examinable : Interactable
     public override void Interact()
     {
         base.Interact();
-        GetComponent<RotateObjectWithMouse>().enabled = true;
+        var rotateScript = GetComponent<RotateObjectWithMouse>();
+            rotateScript.enabled = true;
         ExaminedObject?.Invoke(objectName, hoverText);
+        rotateScript.ClickObject();//Decide What Object To Examine
+        tag = "Untagged";
     }
-
-  
 }

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  interactText: It appears to be locked...
+  hoverText: there's something inside...
   objectName: Strange Box
   audioSource: {fileID: 0}
 --- !u!1 &1145170556078954057
