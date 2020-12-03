@@ -1,25 +1,35 @@
 ﻿using UnityEngine;
 
-public class Candle : Toggleable
+public class Candle : Interactable
 {
-    [SerializeField]
-    private ParticleSystem flameParticle;
+    private bool canBeLit = false;
+
+    [SerializeField] private ParticleSystem flameParticle;
+    [SerializeField] private string litCandleText, collectedMatchesText;
 
     public override void Interact()
     {
         base.Interact();
-        ToggleCandle();
-    }
-
-    private void ToggleCandle()
-    {
-        if (isOn)
+        if (canBeLit)
         {
+            hoverText = litCandleText;
             flameParticle.Play();
         }
-        else
-        {
-            flameParticle.Stop();
-        }
+    }
+
+    private void OnCollectedMatches()
+    {
+        hoverText = collectedMatchesText;
+        canBeLit = true;
+    }
+
+    private void OnEnable()
+    {
+        Matches.CollectedMatches += OnCollectedMatches;
+    }
+
+    private void OnDisable()
+    {
+        Matches.CollectedMatches -= OnCollectedMatches;
     }
 }

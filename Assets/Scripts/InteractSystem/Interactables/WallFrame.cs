@@ -3,7 +3,6 @@
 public class WallFrame : Interactable
 {
     private Rigidbody rigidBody;
-
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();

@@ -27,11 +27,11 @@ public class Toggleable : Interactable
     {
         if (isOn)
         {
-            nextHoverText = turnOffText;
+            hoverText = turnOffText;
         }
         else
         {
-            nextHoverText = turnOnText;
+            hoverText = turnOnText;
         }
     }
 

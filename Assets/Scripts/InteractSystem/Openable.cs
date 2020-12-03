@@ -20,8 +20,8 @@ public class Openable : Interactable
     [SerializeField]
     private bool canBeClosed = true;
 
-    [SerializeField]
-    private string openText = "Open", closeText = "Close";
+    //[SerializeField]
+    private string openText = "open", closeText = "close";
 
     [SerializeField]
     private AudioClip openSound, closeSound, lockSound;
@@ -49,11 +49,11 @@ public class Openable : Interactable
     {
         if (IsOpen)
         {
-            nextHoverText = closeText;
+            hoverText = closeText + " " + objectName;
         }
         else
         {
-            nextHoverText = openText;
+            hoverText = openText + " " + objectName;
         }
     }
 
@@ -61,7 +61,7 @@ public class Openable : Interactable
     {
         if (isLocked)
         {
-            nextHoverText = "Locked";
+            hoverText = "Locked";
             audioSource.PlayOneShot(lockSound);
         }
         else
