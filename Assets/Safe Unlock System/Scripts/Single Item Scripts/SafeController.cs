@@ -3,10 +3,12 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using System.Collections;
+using System;
 
 namespace SafeUnlockSystem
 {
-    public class SafeController : MonoBehaviour
+    [Serializable]
+    public class SafeController 
     {
         [Header("Safe Model Reference")]
         [SerializeField] private GameObject safeModel = null;
@@ -222,7 +224,7 @@ namespace SafeUnlockSystem
                 ColorBlock secondArrowCB = secondArrowUI.colors; secondArrowCB.normalColor = Color.gray; secondArrowUI.colors = secondArrowCB;
                 ColorBlock thirdArrowCB = thirdArrowUI.colors; thirdArrowCB.normalColor = Color.gray; thirdArrowUI.colors = thirdArrowCB;
 
-                StartCoroutine(CheckCode());
+                //StartCoroutine(CheckCode());
             }
         }
 

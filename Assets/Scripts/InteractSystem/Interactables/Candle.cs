@@ -5,7 +5,7 @@ public class Candle : Interactable
     private bool canBeLit = false;
 
     [SerializeField] private ParticleSystem flameParticle;
-    [SerializeField] private string litCandleText;
+    [SerializeField] private string litCandleText, collectedMatchesText;
 
     public override void Interact()
     {
@@ -19,6 +19,7 @@ public class Candle : Interactable
 
     private void OnCollectedMatches()
     {
+        hoverText = collectedMatchesText;
         canBeLit = true;
     }
 

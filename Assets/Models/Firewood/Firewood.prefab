@@ -147,6 +147,7 @@ MonoBehaviour:
   flameParticles: {fileID: 6907476147411649393}
   logBurningDuration: 30
   litFireText: the fire is warm
+  collectedMatchesText: light the fire
 --- !u!82 &884220528845245771
 AudioSource:
   m_ObjectHideFlags: 0

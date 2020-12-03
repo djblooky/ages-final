@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  interactText: read note
+  hoverText: read note
   objectName: note
   audioSource: {fileID: 0}
   noteText: 

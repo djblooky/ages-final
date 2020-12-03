@@ -5139,6 +5139,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   flameParticle: {fileID: 1249002249796105171}
   litCandleText: the candle is lit
+  collectedMatchesText: light candle
 --- !u!65 &2188103517969918888
 BoxCollider:
   m_ObjectHideFlags: 0

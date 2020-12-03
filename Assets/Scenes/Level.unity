@@ -1615,6 +1615,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6389233779741258068, guid: 1b969607c247b7d4fb42fe9bae645466,
+        type: 3}
+      propertyPath: hoverText
+      value: the phone is off the hook
+      objectReference: {fileID: 0}
     - target: {fileID: 7755087947656144047, guid: 1b969607c247b7d4fb42fe9bae645466,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4383,6 +4388,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9147052100811516450, guid: 4268f1cc9f4fb5c4e98cbc58d18e1a2b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4268f1cc9f4fb5c4e98cbc58d18e1a2b, type: 3}
 --- !u!1001 &487975540
@@ -4770,6 +4780,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: hoverText
+      value: open safe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: objectName
+      value: safe
+      objectReference: {fileID: 0}
     - target: {fileID: 1742924979433745563, guid: 5dae24191a92c274f895556d106d6447,
         type: 3}
       propertyPath: m_Name
@@ -5425,6 +5450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947741081853360760, guid: fc7e660ac21d0934a961352933e0c775,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7e660ac21d0934a961352933e0c775, type: 3}
@@ -10350,6 +10380,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7416532712875130585, guid: 01e5699d7c7cf1e47baf47feb235caa2,
+        type: 3}
+      propertyPath: hoverText
+      value: and overfilled ashtray
+      objectReference: {fileID: 0}
     - target: {fileID: 8284729155704832522, guid: 01e5699d7c7cf1e47baf47feb235caa2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10437,6 +10472,11 @@ PrefabInstance:
     - target: {fileID: 6135479397993777039, guid: 08f98fcc844ed9347a4d057f1d19ac21,
         type: 3}
       propertyPath: interactText
+      value: pick up matches
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135479397993777039, guid: 08f98fcc844ed9347a4d057f1d19ac21,
+        type: 3}
+      propertyPath: hoverText
       value: pick up matches
       objectReference: {fileID: 0}
     - target: {fileID: 6808739722831937498, guid: 08f98fcc844ed9347a4d057f1d19ac21,
@@ -11103,6 +11143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note3
       objectReference: {fileID: 0}
+    - target: {fileID: 2037437645344768655, guid: d8f42f0132073594d877c2bdf55444d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5145067607953633814, guid: d8f42f0132073594d877c2bdf55444d8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11157,6 +11202,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612611751754348584, guid: d8f42f0132073594d877c2bdf55444d8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612611751754348584, guid: d8f42f0132073594d877c2bdf55444d8,
+        type: 3}
+      propertyPath: noteText
+      value: You found a clue!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f42f0132073594d877c2bdf55444d8, type: 3}
@@ -11623,6 +11678,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 543234126}
     m_Modifications:
+    - target: {fileID: 1308919497587672290, guid: 8ac427da023bcfa4db31b306967ec239,
+        type: 3}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529573051481234720, guid: 8ac427da023bcfa4db31b306967ec239,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529573051481234720, guid: 8ac427da023bcfa4db31b306967ec239,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529573051481234720, guid: 8ac427da023bcfa4db31b306967ec239,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.91778374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529573051481234720, guid: 8ac427da023bcfa4db31b306967ec239,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7034532
+      objectReference: {fileID: 0}
     - target: {fileID: 4133754199365665819, guid: 8ac427da023bcfa4db31b306967ec239,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12579,6 +12659,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7037242127239361699, guid: 3cd004d79365533498568646b3c30d2f,
+        type: 3}
+      propertyPath: hoverText
+      value: an interesting abstract painting
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cd004d79365533498568646b3c30d2f, type: 3}
 --- !u!4 &1453129224 stripped
@@ -13042,6 +13127,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 468466977}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1624805849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624805847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.526638, y: 1.9262099, z: 0.2145262}
+  m_Center: {x: -0.0011799932, y: 0.036895532, z: -0.025737962}
 --- !u!65 &1624805851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13055,6 +13153,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.526638, y: 1.9262099, z: 0.2145262}
   m_Center: {x: -0.0011799932, y: 0.036895532, z: -0.025737962}
+--- !u!114 &1624805852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624805847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8fea37f48c79624ea6da7d93e88369f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTextOnHover: 1
+  hoverText: i can hear birds outside
+  objectName: 
+  audioSource: {fileID: 0}
 --- !u!1 &1640311011
 GameObject:
   m_ObjectHideFlags: 0
@@ -15628,7 +15742,7 @@ PrefabInstance:
     - target: {fileID: 2465357744284303368, guid: 56e0e659689693842a0de58733836d55,
         type: 3}
       propertyPath: isOn
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3288362182171067395, guid: 56e0e659689693842a0de58733836d55,
         type: 3}
@@ -15678,7 +15792,7 @@ PrefabInstance:
     - target: {fileID: 5082482290681260033, guid: 56e0e659689693842a0de58733836d55,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e0e659689693842a0de58733836d55, type: 3}
@@ -15695,20 +15809,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 543234126}
     m_Modifications:
+    - target: {fileID: 904266769294737438, guid: 5c3b36781f914c246b2549b85b6ca7f0,
+        type: 3}
+      propertyPath: hoverText
+      value: i have nothing to light it with
+      objectReference: {fileID: 0}
     - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.375
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1796875
+      value: 1.03125
       objectReference: {fileID: 0}
     - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.875
+      value: 7.3125
       objectReference: {fileID: 0}
     - target: {fileID: 6024362983538520475, guid: 5c3b36781f914c246b2549b85b6ca7f0,
         type: 3}

@@ -6,7 +6,7 @@ public class Firewood : Interactable
     //[SerializeField] private ParticleSystem dissolveParticles;
     [SerializeField] private ParticleSystem flameParticles;
     [SerializeField] private float logBurningDuration = 3f;
-    [SerializeField] private string litFireText;
+    [SerializeField] private string litFireText, collectedMatchesText;
 
     private bool canBeLit = false;
 
@@ -32,6 +32,7 @@ public class Firewood : Interactable
 
     private void OnCollectedMatches()
     {
+        hoverText = collectedMatchesText;
         canBeLit = true;
     }
 
