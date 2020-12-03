@@ -13853,7 +13853,11 @@ PrefabInstance:
     - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: noteText
-      value: Thank you for playing the demo!
+      value: 'Thank you for playing the beta demo!
+
+
+        You can press escape
+        to quit the application'
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
