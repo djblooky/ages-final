@@ -5520,6 +5520,11 @@ PrefabInstance:
       propertyPath: Pan2D
       value: 0.51
       objectReference: {fileID: 0}
+    - target: {fileID: 5502135271211008125, guid: 2ba66ff0f95d4e243a6383b7f8d1229a,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ba66ff0f95d4e243a6383b7f8d1229a, type: 3}
 --- !u!4 &694206713 stripped
@@ -12134,6 +12139,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180296561607542657, guid: ebbaf69f691c13e42bd147d62284c72f,
+        type: 3}
+      propertyPath: hoverText
+      value: there are colored darts in the board
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbaf69f691c13e42bd147d62284c72f, type: 3}
 --- !u!4 &1337928405 stripped
@@ -13578,6 +13588,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1643004634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5642427898180797362, guid: eefc6f74682647c47bd8121b0a83e663,
+    type: 3}
+  m_PrefabInstance: {fileID: 1814697226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1643004635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643004634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5505bbd016d0e49a2d51c0d68c3c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1644130016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5502003733843465055, guid: 58a9fde02eef5454cace07ef7be42e03,
