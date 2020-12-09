@@ -2,8 +2,12 @@
 
 public class Lamp : Toggleable
 {
-    [SerializeField]
-    private Light light;
+    private Light[] lights;
+
+    private void Start()
+    {
+        lights = GetComponentsInChildren<Light>();
+    }
 
     public override void Interact()
     {
@@ -15,11 +19,13 @@ public class Lamp : Toggleable
     {
         if (isOn)
         {
-            light.enabled = true;
+            foreach(Light light in lights)
+                light.enabled = true;
         }
         else
         {
-            light.enabled = false;
+            foreach (Light light in lights)
+                light.enabled = false;
         }
     }
 }

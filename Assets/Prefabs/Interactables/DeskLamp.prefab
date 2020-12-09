@@ -249,8 +249,8 @@ Light:
   m_Color: {r: 0.9811321, g: 0.8486515, b: 0.5275899, a: 1}
   m_Intensity: 2.02
   m_Range: 10.32
-  m_SpotAngle: 128.87738
-  m_InnerSpotAngle: 68.974686
+  m_SpotAngle: 118.10866
+  m_InnerSpotAngle: 58.205967
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -384,7 +384,6 @@ MonoBehaviour:
   turnOnText: turn on desk lamp
   turnOffText: turn off desk lamp
   switchSound: {fileID: 8300000, guid: d06b1cc9059671f41afeadc2cd1ae9f7, type: 3}
-  light: {fileID: 6458903048833409472}
 --- !u!65 &5360405465498150021
 BoxCollider:
   m_ObjectHideFlags: 0
