@@ -3,12 +3,16 @@ using UnityEngine;
 
 public class Firewood : Interactable
 {
-    //[SerializeField] private ParticleSystem dissolveParticles;
-    [SerializeField] private ParticleSystem flameParticles;
+    private ParticleSystem[] particleSystems;
     [SerializeField] private float logBurningDuration = 3f;
     [SerializeField] private string litFireText, collectedMatchesText;
 
     private bool canBeLit = false;
+
+    private void Start()
+    {
+        particleSystems = GetComponentsInChildren<ParticleSystem>();
+    }
 
     public override void Interact()
     {
@@ -17,7 +21,8 @@ public class Firewood : Interactable
         {
             hoverText = litFireText;
             audioSource.Play();
-            flameParticles.Play();
+            foreach (ParticleSystem particles in particleSystems)
+                particles.Play();
             StartCoroutine(BurnOutLogsAfterDelay());
         }
     }
@@ -26,7 +31,8 @@ public class Firewood : Interactable
     {
         yield return new WaitForSeconds(logBurningDuration);
         audioSource.Stop(); //polish: play extinguish sound
-        flameParticles.Stop();
+        foreach (ParticleSystem particles in particleSystems)
+            particles.Stop();
         Destroy(transform.root.gameObject);
     }
 
