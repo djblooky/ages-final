@@ -10,17 +10,21 @@ namespace SafeUnlockSystem
     [Serializable]
     public class SafeController 
     {
-        [Header("Safe Model Reference")]
-        [SerializeField] private GameObject safeModel = null;
+        public static event Action SafeOpened, SafeUIClosed;
+
+        [SerializeField] float rotateDialDegrees = 22.5f;
+
+        [Header("Safe Dial Reference")]
+        //[SerializeField] private GameObject safeModel = null;
         [SerializeField] private Transform safeDial = null;
 
-        [Header("Animation References")]
-        [SerializeField] private string safeAnimationName = "SafeDoorOpen";
-        private Animator safeAnim;
+        //[Header("Animation References")]
+        //[SerializeField] private string safeAnimationName = "SafeDoorOpen";
+        //private Animator safeAnim;
 
-        [Header("Animation Timers - Default: 1.0f / 0.5f")]
-        [SerializeField] private float beforeAnimationStart = 1.0f;
-        [SerializeField] private float beforeOpenDoor = 0.5f;
+        //[Header("Animation Timers - Default: 1.0f / 0.5f")]
+        //[SerializeField] private float beforeAnimationStart = 1.0f;
+        //[SerializeField] private float beforeOpenDoor = 0.5f;
 
         [Header("Safe UI")]
         [SerializeField] private GameObject safeUI = null;
@@ -52,17 +56,15 @@ namespace SafeUnlockSystem
         [SerializeField] private bool isTriggerInteraction = false; 
         [SerializeField] private GameObject triggerObject = null; 
 
-        [Header("Unity Event - What happens when you open the safe?")]
-        [SerializeField] private UnityEvent safeOpened = null;
-
-        void Awake()
+        public void Initialize()
         {
+            Debug.Log("safe init");
             if (isTriggerInteraction)
             {
                 disableClose = true;
             }
             firstNumber = true;
-            safeAnim = safeModel.gameObject.GetComponent<Animator>();
+            //safeAnim = safeModel.gameObject.GetComponent<Animator>();
 
             firstNumberUI.color = Color.white;
             secondNumberUI.color = Color.gray;
@@ -79,6 +81,7 @@ namespace SafeUnlockSystem
 
         public void ShowSafeLock()
         {
+            Debug.Log("showSafeLock");
             if (isTriggerInteraction)
             {
                 disableClose = false;
@@ -86,45 +89,47 @@ namespace SafeUnlockSystem
             }
 
             safeUI.SetActive(true);
-            SafeDisableManager.instance.DisablePlayer(true);
-            SafeAudioManager.instance.Play("InteractSound");
+            //SafeDisableManager.instance.DisablePlayer(true);
+            //SafeAudioManager.instance.Play("InteractSound");
         }
 
-        private void Update()
+        public void UpdateSafe()
         {
             if (!disableClose)
             {
-                if (Input.GetKeyDown(SafeInputManager.instance.closeKey))
+                if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
                 {
+                    Debug.Log("SafeClosed");
                     if (isTriggerInteraction)
                     {
                         disableClose = true;
                         triggerObject.SetActive(true);
                     }
 
-                    SafeDisableManager.instance.DisablePlayer(false);
+                    //SafeDisableManager.instance.DisablePlayer(false);
                     safeUI.SetActive(false);
+                    SafeUIClosed?.Invoke();
                 }
             }
         }
 
-        private IEnumerator CheckCode()
+        private void CheckCode()
         {
             string playerInputNumber = firstNumberUI.text + secondNumberUI.text + thirdNumberUI.text;
             string safeSolution = safeSolutionNum1.ToString("0") + safeSolutionNum2.ToString("0") + safeSolutionNum3.ToString("0");
 
             if (playerInputNumber == safeSolution)
             {
-                SafeDisableManager.instance.DisablePlayer(false);
+                //SafeDisableManager.instance.DisablePlayer(false);
                 safeUI.SetActive(false);
-                safeModel.tag = "Untagged";
+                //safeModel.tag = "Untagged";
 
-                SafeAudioManager.instance.Play("BoltUnlock");
-                yield return new WaitForSeconds(beforeAnimationStart);
-                safeAnim.Play(safeAnimationName, 0, 0.0f);  
-                SafeAudioManager.instance.Play("HandleSpin");
-                yield return new WaitForSeconds(beforeOpenDoor);
-                SafeAudioManager.instance.Play("SafeDoorOpen");
+                //SafeAudioManager.instance.Play("BoltUnlock");
+                //yield return new WaitForSeconds(beforeAnimationStart);
+                //safeAnim.Play(safeAnimationName, 0, 0.0f);  
+                //SafeAudioManager.instance.Play("HandleSpin");
+                //yield return new WaitForSeconds(beforeOpenDoor);
+                //SafeAudioManager.instance.Play("SafeDoorOpen");
 
                 if (isTriggerInteraction)
                 {
@@ -132,11 +137,11 @@ namespace SafeUnlockSystem
                     triggerObject.SetActive(false);
                 }
 
-                safeOpened.Invoke();
+                SafeOpened?.Invoke();
             }
             else
             {
-                SafeAudioManager.instance.Play("LockRattle");
+                //SafeAudioManager.instance.Play("LockRattle");
                 firstNumberUI.text = "0";
                 secondNumberUI.text = "0";
                 thirdNumberUI.text = "0";
@@ -156,7 +161,7 @@ namespace SafeUnlockSystem
                 ColorBlock secondArrowCB = secondArrowUI.colors; secondArrowCB.normalColor = Color.gray; secondArrowUI.colors = secondArrowCB;
                 ColorBlock thirdArrowCB = thirdArrowUI.colors; thirdArrowCB.normalColor = Color.gray; thirdArrowUI.colors = thirdArrowCB;
 
-                safeDial.transform.localEulerAngles = new Vector3(90.0f, 0.0f, 0.0f);
+                safeDial.transform.localEulerAngles = new Vector3(0.0f, 90.0f, -90.0f);
                 lockNumberInt = 0;
             }
         }
@@ -164,7 +169,7 @@ namespace SafeUnlockSystem
         public void AcceptKey()
         {
             EventSystem.current.SetSelectedGameObject(null);
-            SafeAudioManager.instance.Play("InteractSound");
+            //SafeAudioManager.instance.Play("InteractSound");
 
             if (firstNumber)
             {
@@ -224,27 +229,27 @@ namespace SafeUnlockSystem
                 ColorBlock secondArrowCB = secondArrowUI.colors; secondArrowCB.normalColor = Color.gray; secondArrowUI.colors = secondArrowCB;
                 ColorBlock thirdArrowCB = thirdArrowUI.colors; thirdArrowCB.normalColor = Color.gray; thirdArrowUI.colors = thirdArrowCB;
 
-                //StartCoroutine(CheckCode());
+                CheckCode();
             }
         }
 
         public void UpKey(int lockNumberSelection)
         {
             EventSystem.current.SetSelectedGameObject(null);
-            SafeAudioManager.instance.Play("SafeClick");
+            //SafeAudioManager.instance.Play("SafeClick");
 
             if (firstNumber && lockNumberSelection == 1)
             {
                 if (lockNumberInt <= 14)
                 {
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f,-rotateDialDegrees, Space.Self);
                     lockNumberInt++;
                     firstNumberUI.text = lockNumberInt.ToString("0");
                 }
                 else
                 {
                     lockNumberInt = 0;
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, -rotateDialDegrees, Space.Self);
                     firstNumberUI.text = lockNumberInt.ToString("0");
                 }
             }
@@ -253,14 +258,14 @@ namespace SafeUnlockSystem
             {
                 if (lockNumberInt >= 1)
                 {
-                    safeDial.transform.Rotate(0.0f, 0.0f, 22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, rotateDialDegrees, Space.Self);
                     lockNumberInt--;
                     secondNumberUI.text = lockNumberInt.ToString("0");
                 }
                 else
                 {
                     lockNumberInt = 15;
-                    safeDial.transform.Rotate(0.0f, 0.0f, 22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, rotateDialDegrees, Space.Self);
                     secondNumberUI.text = lockNumberInt.ToString("0");
                 }
             }
@@ -269,14 +274,14 @@ namespace SafeUnlockSystem
             {
                 if (lockNumberInt <= 14)
                 {
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, -rotateDialDegrees, Space.Self);
                     lockNumberInt++;
                     thirdNumberUI.text = lockNumberInt.ToString("0");
                 }
                 else
                 {
                     lockNumberInt = 0;
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, -rotateDialDegrees, Space.Self);
                     thirdNumberUI.text = lockNumberInt.ToString("0");
                 }
             }
