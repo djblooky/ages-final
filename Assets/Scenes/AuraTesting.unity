@@ -4981,16 +4981,6 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6458903048833409472, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 140.71129
-      objectReference: {fileID: 0}
-    - target: {fileID: 6458903048833409472, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 80.80855
-      objectReference: {fileID: 0}
     - target: {fileID: 6685878223303034745, guid: ac67fd27643722449995be4be2cd1909,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6246,36 +6236,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1335141130}
-    - target: {fileID: 9088597895597055446, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.33681586
-      objectReference: {fileID: 0}
-    - target: {fileID: 9088597895597055446, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5296506
-      objectReference: {fileID: 0}
-    - target: {fileID: 9088597895597055446, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.24099784
-      objectReference: {fileID: 0}
-    - target: {fileID: 9088597895597055446, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7402333
-      objectReference: {fileID: 0}
-    - target: {fileID: 9088597895597055446, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 48.932003
-      objectReference: {fileID: 0}
-    - target: {fileID: 9088597895597055446, guid: ac67fd27643722449995be4be2cd1909,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 71.16901
-      objectReference: {fileID: 0}
     - target: {fileID: 9218354651024911020, guid: ac67fd27643722449995be4be2cd1909,
         type: 3}
       propertyPath: m_Mesh
