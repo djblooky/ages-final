@@ -56,6 +56,7 @@ public class Safe : Openable
         inputHandler.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        isLocked = false;
         IsOpen = true;
         tag = "Untagged";
     }
