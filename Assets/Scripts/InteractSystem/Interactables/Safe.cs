@@ -40,9 +40,9 @@ public class Safe : Openable
     }
 
     //links to button
-    public void UpKeyButtonPressed()
+    public void UpKeyButtonPressed(int number)
     {
-        safeController.UpKey(1);
+        safeController.UpKey(number);
     }
 
     //links to button

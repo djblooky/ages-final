@@ -3505,7 +3505,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 635734423}
         m_MethodName: UpKeyButtonPressed
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3940,6 +3940,26 @@ PrefabInstance:
         type: 3}
       propertyPath: isLocked
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: safeController.safeSolutionNum1
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: safeController.safeSolutionNum2
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: safeController.safeSolutionNum3
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418723434375933800, guid: 5dae24191a92c274f895556d106d6447,
+        type: 3}
+      propertyPath: safeController.lockNumberInt
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1742924979433745563, guid: 5dae24191a92c274f895556d106d6447,
         type: 3}
@@ -4640,7 +4660,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 635734423}
         m_MethodName: UpKeyButtonPressed
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4769,7 +4789,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 635734423}
         m_MethodName: UpKeyButtonPressed
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
