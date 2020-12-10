@@ -10,6 +10,8 @@ namespace SafeUnlockSystem
     [Serializable]
     public class SafeController 
     {
+        public static event Action SafeOpened, SafeUIClosed;
+
         [Header("Safe Model Reference")]
         [SerializeField] private GameObject safeModel = null;
         [SerializeField] private Transform safeDial = null;
@@ -52,11 +54,9 @@ namespace SafeUnlockSystem
         [SerializeField] private bool isTriggerInteraction = false; 
         [SerializeField] private GameObject triggerObject = null; 
 
-        [Header("Unity Event - What happens when you open the safe?")]
-        [SerializeField] private UnityEvent safeOpened = null;
-
-        void Awake()
+        public void Initialize()
         {
+            Debug.Log("safe init");
             if (isTriggerInteraction)
             {
                 disableClose = true;
@@ -79,6 +79,7 @@ namespace SafeUnlockSystem
 
         public void ShowSafeLock()
         {
+            Debug.Log("showSafeLock");
             if (isTriggerInteraction)
             {
                 disableClose = false;
@@ -86,45 +87,47 @@ namespace SafeUnlockSystem
             }
 
             safeUI.SetActive(true);
-            SafeDisableManager.instance.DisablePlayer(true);
-            SafeAudioManager.instance.Play("InteractSound");
+            //SafeDisableManager.instance.DisablePlayer(true);
+            //SafeAudioManager.instance.Play("InteractSound");
         }
 
-        private void Update()
+        public void UpdateSafe()
         {
             if (!disableClose)
             {
-                if (Input.GetKeyDown(SafeInputManager.instance.closeKey))
+                if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
                 {
+                    Debug.Log("SafeClosed");
                     if (isTriggerInteraction)
                     {
                         disableClose = true;
                         triggerObject.SetActive(true);
                     }
 
-                    SafeDisableManager.instance.DisablePlayer(false);
+                    //SafeDisableManager.instance.DisablePlayer(false);
                     safeUI.SetActive(false);
+                    SafeUIClosed?.Invoke();
                 }
             }
         }
 
-        private IEnumerator CheckCode()
+        private void CheckCode()
         {
             string playerInputNumber = firstNumberUI.text + secondNumberUI.text + thirdNumberUI.text;
             string safeSolution = safeSolutionNum1.ToString("0") + safeSolutionNum2.ToString("0") + safeSolutionNum3.ToString("0");
 
             if (playerInputNumber == safeSolution)
             {
-                SafeDisableManager.instance.DisablePlayer(false);
+                //SafeDisableManager.instance.DisablePlayer(false);
                 safeUI.SetActive(false);
                 safeModel.tag = "Untagged";
 
-                SafeAudioManager.instance.Play("BoltUnlock");
-                yield return new WaitForSeconds(beforeAnimationStart);
-                safeAnim.Play(safeAnimationName, 0, 0.0f);  
-                SafeAudioManager.instance.Play("HandleSpin");
-                yield return new WaitForSeconds(beforeOpenDoor);
-                SafeAudioManager.instance.Play("SafeDoorOpen");
+                //SafeAudioManager.instance.Play("BoltUnlock");
+                //yield return new WaitForSeconds(beforeAnimationStart);
+                //safeAnim.Play(safeAnimationName, 0, 0.0f);  
+                //SafeAudioManager.instance.Play("HandleSpin");
+                //yield return new WaitForSeconds(beforeOpenDoor);
+                //SafeAudioManager.instance.Play("SafeDoorOpen");
 
                 if (isTriggerInteraction)
                 {
@@ -132,11 +135,11 @@ namespace SafeUnlockSystem
                     triggerObject.SetActive(false);
                 }
 
-                safeOpened.Invoke();
+                SafeOpened?.Invoke();
             }
             else
             {
-                SafeAudioManager.instance.Play("LockRattle");
+                //SafeAudioManager.instance.Play("LockRattle");
                 firstNumberUI.text = "0";
                 secondNumberUI.text = "0";
                 thirdNumberUI.text = "0";
@@ -164,7 +167,7 @@ namespace SafeUnlockSystem
         public void AcceptKey()
         {
             EventSystem.current.SetSelectedGameObject(null);
-            SafeAudioManager.instance.Play("InteractSound");
+            //SafeAudioManager.instance.Play("InteractSound");
 
             if (firstNumber)
             {
@@ -224,14 +227,14 @@ namespace SafeUnlockSystem
                 ColorBlock secondArrowCB = secondArrowUI.colors; secondArrowCB.normalColor = Color.gray; secondArrowUI.colors = secondArrowCB;
                 ColorBlock thirdArrowCB = thirdArrowUI.colors; thirdArrowCB.normalColor = Color.gray; thirdArrowUI.colors = thirdArrowCB;
 
-                //StartCoroutine(CheckCode());
+                CheckCode();
             }
         }
 
         public void UpKey(int lockNumberSelection)
         {
             EventSystem.current.SetSelectedGameObject(null);
-            SafeAudioManager.instance.Play("SafeClick");
+            //SafeAudioManager.instance.Play("SafeClick");
 
             if (firstNumber && lockNumberSelection == 1)
             {

@@ -596,23 +596,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e7db76da0f9c445a2bab82885a4b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayTextOnHover: 1
-  nextHoverText: Open safe
+  displayTextOnHover: 0
+  hoverText: 
+  objectName: 
   audioSource: {fileID: 7620321295023059225}
   isLocked: 1
   canBeClosed: 0
-  openText: Open safe
-  closeText: Close safe
-  openSound: {fileID: 0}
+  openSound: {fileID: 8300000, guid: 164dd0e5118f7ee439e46959aba2abfb, type: 3}
   closeSound: {fileID: 0}
-  lockSound: {fileID: 0}
+  lockSound: {fileID: 8300000, guid: e2746947e72b72549a81ebbdd88cf716, type: 3}
   animator: {fileID: 0}
   inputHandler: {fileID: 0}
-  safeLock: {fileID: 288144769432419797}
-  safeUIPanel: {fileID: 0}
-  safeSolutionNum1: 0
-  safeSolutionNum2: 0
-  safeSolutionNum3: 0
+  safeController:
+    safeModel: {fileID: 0}
+    safeDial: {fileID: 0}
+    safeAnimationName: SafeDoorOpen
+    beforeAnimationStart: 1
+    beforeOpenDoor: 0.5
+    safeUI: {fileID: 0}
+    safeSolutionNum1: 0
+    safeSolutionNum2: 0
+    safeSolutionNum3: 0
+    firstNumberUI: {fileID: 0}
+    secondNumberUI: {fileID: 0}
+    thirdNumberUI: {fileID: 0}
+    firstArrowUI: {fileID: 0}
+    secondArrowUI: {fileID: 0}
+    thirdArrowUI: {fileID: 0}
+    disableClose: 0
+    lockNumberInt: 0
+    isTriggerInteraction: 0
+    triggerObject: {fileID: 0}
 --- !u!82 &7620321295023059225
 AudioSource:
   m_ObjectHideFlags: 0
