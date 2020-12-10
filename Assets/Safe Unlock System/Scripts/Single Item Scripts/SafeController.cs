@@ -12,17 +12,19 @@ namespace SafeUnlockSystem
     {
         public static event Action SafeOpened, SafeUIClosed;
 
-        [Header("Safe Model Reference")]
-        [SerializeField] private GameObject safeModel = null;
+        [SerializeField] float rotateDialDegrees = 22.5f;
+
+        [Header("Safe Dial Reference")]
+        //[SerializeField] private GameObject safeModel = null;
         [SerializeField] private Transform safeDial = null;
 
-        [Header("Animation References")]
-        [SerializeField] private string safeAnimationName = "SafeDoorOpen";
-        private Animator safeAnim;
+        //[Header("Animation References")]
+        //[SerializeField] private string safeAnimationName = "SafeDoorOpen";
+        //private Animator safeAnim;
 
-        [Header("Animation Timers - Default: 1.0f / 0.5f")]
-        [SerializeField] private float beforeAnimationStart = 1.0f;
-        [SerializeField] private float beforeOpenDoor = 0.5f;
+        //[Header("Animation Timers - Default: 1.0f / 0.5f")]
+        //[SerializeField] private float beforeAnimationStart = 1.0f;
+        //[SerializeField] private float beforeOpenDoor = 0.5f;
 
         [Header("Safe UI")]
         [SerializeField] private GameObject safeUI = null;
@@ -62,7 +64,7 @@ namespace SafeUnlockSystem
                 disableClose = true;
             }
             firstNumber = true;
-            safeAnim = safeModel.gameObject.GetComponent<Animator>();
+            //safeAnim = safeModel.gameObject.GetComponent<Animator>();
 
             firstNumberUI.color = Color.white;
             secondNumberUI.color = Color.gray;
@@ -120,7 +122,7 @@ namespace SafeUnlockSystem
             {
                 //SafeDisableManager.instance.DisablePlayer(false);
                 safeUI.SetActive(false);
-                safeModel.tag = "Untagged";
+                //safeModel.tag = "Untagged";
 
                 //SafeAudioManager.instance.Play("BoltUnlock");
                 //yield return new WaitForSeconds(beforeAnimationStart);
@@ -159,7 +161,7 @@ namespace SafeUnlockSystem
                 ColorBlock secondArrowCB = secondArrowUI.colors; secondArrowCB.normalColor = Color.gray; secondArrowUI.colors = secondArrowCB;
                 ColorBlock thirdArrowCB = thirdArrowUI.colors; thirdArrowCB.normalColor = Color.gray; thirdArrowUI.colors = thirdArrowCB;
 
-                safeDial.transform.localEulerAngles = new Vector3(90.0f, 0.0f, 0.0f);
+                safeDial.transform.localEulerAngles = new Vector3(0.0f, 90.0f, -90.0f);
                 lockNumberInt = 0;
             }
         }
@@ -240,14 +242,14 @@ namespace SafeUnlockSystem
             {
                 if (lockNumberInt <= 14)
                 {
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f,-rotateDialDegrees, Space.Self);
                     lockNumberInt++;
                     firstNumberUI.text = lockNumberInt.ToString("0");
                 }
                 else
                 {
                     lockNumberInt = 0;
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, -rotateDialDegrees, Space.Self);
                     firstNumberUI.text = lockNumberInt.ToString("0");
                 }
             }
@@ -256,14 +258,14 @@ namespace SafeUnlockSystem
             {
                 if (lockNumberInt >= 1)
                 {
-                    safeDial.transform.Rotate(0.0f, 0.0f, 22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, rotateDialDegrees, Space.Self);
                     lockNumberInt--;
                     secondNumberUI.text = lockNumberInt.ToString("0");
                 }
                 else
                 {
                     lockNumberInt = 15;
-                    safeDial.transform.Rotate(0.0f, 0.0f, 22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, rotateDialDegrees, Space.Self);
                     secondNumberUI.text = lockNumberInt.ToString("0");
                 }
             }
@@ -272,14 +274,14 @@ namespace SafeUnlockSystem
             {
                 if (lockNumberInt <= 14)
                 {
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, -rotateDialDegrees, Space.Self);
                     lockNumberInt++;
                     thirdNumberUI.text = lockNumberInt.ToString("0");
                 }
                 else
                 {
                     lockNumberInt = 0;
-                    safeDial.transform.Rotate(0.0f, 0.0f, -22.5f, Space.Self);
+                    safeDial.transform.Rotate(0.0f, 0.0f, -rotateDialDegrees, Space.Self);
                     thirdNumberUI.text = lockNumberInt.ToString("0");
                 }
             }
