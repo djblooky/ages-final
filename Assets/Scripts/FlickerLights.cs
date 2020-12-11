@@ -1,21 +1,61 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FlickerLights : MonoBehaviour
 {
-    [SerializeField]
-    private Light[] lightsToFlicker;
+    [SerializeField] AudioClip flickerSound;
+    [SerializeField] private float delayBetweenFlickers = 10;
+    [SerializeField] private Light[] lightsToFlicker;
 
-    // Start is called before the first frame update
-    void Start()
+    private bool couroutineRunning = false;
+    private AudioSource audioSource;
+
+    private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (!couroutineRunning)
+        {
+            StartCoroutine(Flicker());
+            couroutineRunning = true;
+        }
+    }
+
+    private IEnumerator Flicker()
+    {
+        yield return new WaitForSeconds(delayBetweenFlickers);
+
+        audioSource.PlayOneShot(flickerSound);
+
+        TurnLightsOff();
+        yield return new WaitForSeconds(0.1f);
+        TurnLightsOn();
+
+        yield return new WaitForSeconds(0.2f);
+
+        TurnLightsOff();
+        yield return new WaitForSeconds(0.1f);
+        TurnLightsOn();
+
+        couroutineRunning = false;
+    }
+
+    private void TurnLightsOff()
+    {
+        foreach (Light light in lightsToFlicker)
+        {
+            light.enabled = false;
+        }
+    }
+
+    private void TurnLightsOn()
+    {
+        foreach (Light light in lightsToFlicker)
+        {
+            light.enabled = true;
+        }
     }
 }
