@@ -12,5 +12,6 @@ public class Note : Interactable
     public override void Interact()
     {
         OpenedNote?.Invoke(noteText);
+        audioSource.Play();
     }
 }

@@ -2,12 +2,10 @@
 
 public class WinGameTrigger : MonoBehaviour
 {
-    private AudioSource audioSource;
 
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    [SerializeField] private GameObject StartRoom, ConcreteRoom;
+
+    [SerializeField] private AudioSource audioSource;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +13,10 @@ public class WinGameTrigger : MonoBehaviour
         {
             if(!audioSource.isPlaying)
                 audioSource.Play();
+
+            StartRoom.SetActive(false);
+            ConcreteRoom.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }

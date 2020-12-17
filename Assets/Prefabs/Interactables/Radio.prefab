@@ -92,12 +92,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  nextHoverText: 
-  isOn: 1
-  turnOnText: Turn on radio
-  turnOffText: Turn off radio
-  switchSound: {fileID: 8300000, guid: 13a0a3f2f11990c47888a8cf7bc32f96, type: 3}
+  hoverText: 
+  objectName: 
   audioSource: {fileID: 4500093168669257302}
+  isOn: 1
+  turnOnText: turn on radio
+  turnOffText: turn off radio
+  switchSound: {fileID: 8300000, guid: 13a0a3f2f11990c47888a8cf7bc32f96, type: 3}
 --- !u!82 &5082482290681260033
 AudioSource:
   m_ObjectHideFlags: 0
@@ -110,7 +111,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2f2d6380babbaf149ad137c64aa1b1ff, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.07
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -205,7 +206,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
