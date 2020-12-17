@@ -10,7 +10,8 @@ PrefabInstance:
     - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: noteText
-      value: There is something hidden in this room, can you find it?
+      value: "There's something hidden in this room. \n\nIf you can find it, you
+        might make it out of here."
       objectReference: {fileID: 0}
     - target: {fileID: 1544016982589535019, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}

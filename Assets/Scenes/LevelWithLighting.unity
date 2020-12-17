@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1418059667}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.07783307, g: 0.08349743, b: 0.08517584, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: af9c8847737aac14dbe5e6b95a8ebbfa,
+  m_LightingDataAsset: {fileID: 112000000, guid: f7b3b8486e1dbb84da109b645aead28f,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -346,7 +346,7 @@ PrefabInstance:
     - target: {fileID: 3121712138715228561, guid: 1b969607c247b7d4fb42fe9bae645466,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 5240502710787904654, guid: 1b969607c247b7d4fb42fe9bae645466,
         type: 3}
@@ -368,7 +368,8 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6389233779741258068, guid: 1b969607c247b7d4fb42fe9bae645466, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1b969607c247b7d4fb42fe9bae645466, type: 3}
 --- !u!1 &73361072
 GameObject:
@@ -409,6 +410,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1464017812190790982}
     m_Modifications:
+    - target: {fileID: 1133798811568569373, guid: ac67fd27643722449995be4be2cd1909,
+        type: 3}
+      propertyPath: m_Range
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1512021522579481966, guid: ac67fd27643722449995be4be2cd1909,
         type: 3}
       propertyPath: m_Mesh
@@ -889,6 +895,26 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 285694825}
+    - target: {fileID: 6458903048833409472, guid: ac67fd27643722449995be4be2cd1909,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458903048833409472, guid: ac67fd27643722449995be4be2cd1909,
+        type: 3}
+      propertyPath: m_Range
+      value: 9.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458903048833409472, guid: ac67fd27643722449995be4be2cd1909,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 106.63229
+      objectReference: {fileID: 0}
+    - target: {fileID: 6458903048833409472, guid: ac67fd27643722449995be4be2cd1909,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 46.729538
+      objectReference: {fileID: 0}
     - target: {fileID: 7414762229565164125, guid: ac67fd27643722449995be4be2cd1909,
         type: 3}
       propertyPath: m_Name
@@ -2322,7 +2348,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24198
+  m_Name: pb_Mesh18520
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2512,6 +2538,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 465424022390852751, guid: 0aceff9d707cec745a0a0156b612439d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
+      objectReference: {fileID: 0}
     - target: {fileID: 745277520975822786, guid: 0aceff9d707cec745a0a0156b612439d,
         type: 3}
       propertyPath: m_IsActive
@@ -2551,6 +2582,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792738198464317211, guid: 0aceff9d707cec745a0a0156b612439d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 1854709036642655364, guid: 0aceff9d707cec745a0a0156b612439d,
         type: 3}
@@ -2807,6 +2843,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5477546463823606671, guid: 0aceff9d707cec745a0a0156b612439d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
+      objectReference: {fileID: 0}
     - target: {fileID: 5499298601237671689, guid: 0aceff9d707cec745a0a0156b612439d,
         type: 3}
       propertyPath: m_Layer
@@ -2892,6 +2933,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7518872234467891647, guid: 0aceff9d707cec745a0a0156b612439d,
+        type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7556981929463656013, guid: 0aceff9d707cec745a0a0156b612439d,
         type: 3}
       propertyPath: m_IsActive
@@ -2916,6 +2962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7970152988828516648, guid: 0aceff9d707cec745a0a0156b612439d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 7981446639166339866, guid: 0aceff9d707cec745a0a0156b612439d,
         type: 3}
@@ -3024,7 +3075,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115423783}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3280,7 +3331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115423783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0.25, z: 9.5}
+  m_LocalPosition: {x: 2.5, y: 0.25, z: 7.503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 574228223}
@@ -4993,7 +5044,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24524
+  m_Name: pb_Mesh18846
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11260,7 +11311,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230090
+  m_Name: pb_Mesh18722
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15712,6 +15763,28 @@ Transform:
   m_Father: {fileID: 1464017812190790982}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 180, y: -0.000015258789, z: -0.000015258789}
+--- !u!1 &879490538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3121712138715228561, guid: 1b969607c247b7d4fb42fe9bae645466,
+    type: 3}
+  m_PrefabInstance: {fileID: 64657646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &879490539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879490538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8fea37f48c79624ea6da7d93e88369f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTextOnHover: 1
+  hoverText: the phone is off the hook
+  objectName: 
+  audioSource: {fileID: 0}
 --- !u!1 &881475497
 GameObject:
   m_ObjectHideFlags: 0
@@ -17057,7 +17130,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230608
+  m_Name: pb_Mesh19240
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17373,7 +17446,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24084
+  m_Name: pb_Mesh18406
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25960,7 +26033,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh229848
+  m_Name: pb_Mesh18480
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27144,7 +27217,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24660
+  m_Name: pb_Mesh18980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27940,7 +28013,7 @@ PrefabInstance:
     - target: {fileID: 5107590917107836213, guid: 9e2138c1ee092cb4099225e45e0fd2a7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 5149853101089949656, guid: 9e2138c1ee092cb4099225e45e0fd2a7,
         type: 3}
@@ -27950,7 +28023,7 @@ PrefabInstance:
     - target: {fileID: 6207374466077537574, guid: 9e2138c1ee092cb4099225e45e0fd2a7,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 6911525157806322365, guid: 9e2138c1ee092cb4099225e45e0fd2a7,
         type: 3}
@@ -28078,7 +28151,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24496
+  m_Name: pb_Mesh18818
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28374,7 +28447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayTextOnHover: 1
-  hoverText: i can hear birds outside
+  hoverText: the sun is setting
   objectName: 
   audioSource: {fileID: 0}
 --- !u!1 &1640311011
@@ -29545,7 +29618,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24634
+  m_Name: pb_Mesh18954
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30193,7 +30266,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh230478
+  m_Name: pb_Mesh19110
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33391,7 +33464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1464017812190790989
 MeshCollider:
   m_ObjectHideFlags: 0

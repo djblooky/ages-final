@@ -10,11 +10,8 @@ PrefabInstance:
     - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
       propertyPath: noteText
-      value: 'If you are reading this you are already running out of time!  You have
-        to escape before it''s too late.
-
-
-        Don''t trust the room.'
+      value: "If you are reading this you are already running out of time... \n\nLook
+        for the way out. Find the other clues. \n\nAnd lastly, don't trust the room!"
       objectReference: {fileID: 0}
     - target: {fileID: 706844841752836373, guid: eefc6f74682647c47bd8121b0a83e663,
         type: 3}
