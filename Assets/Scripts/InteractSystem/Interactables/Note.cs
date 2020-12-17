@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class Note : Interactable
 {
-    public static event Action<string> OpenedNote;
+    public static event Action<string, bool> OpenedNote;
+
+    [SerializeField] bool showOverlayImage = false;
 
     [SerializeField]
     [TextArea(1,10)]
@@ -11,7 +13,7 @@ public class Note : Interactable
 
     public override void Interact()
     {
-        OpenedNote?.Invoke(noteText);
+        OpenedNote?.Invoke(noteText, showOverlayImage);
         audioSource.Play();
     }
 }
