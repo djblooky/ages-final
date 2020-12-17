@@ -11786,6 +11786,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5859638264561784903, guid: fc7e660ac21d0934a961352933e0c775,
+        type: 3}
+      propertyPath: destroyObj
+      value: 
+      objectReference: {fileID: 683071713}
     - target: {fileID: 6706491812278605165, guid: fc7e660ac21d0934a961352933e0c775,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11803,6 +11808,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7e660ac21d0934a961352933e0c775, type: 3}
+--- !u!1 &683071713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 447639785095253402, guid: fc7e660ac21d0934a961352933e0c775,
+    type: 3}
+  m_PrefabInstance: {fileID: 683071712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &694206712
 PrefabInstance:
   m_ObjectHideFlags: 0

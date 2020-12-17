@@ -6,6 +6,7 @@ public class Firewood : Interactable
     private ParticleSystem[] particleSystems;
     [SerializeField] private float logBurningDuration = 3f;
     [SerializeField] private string litFireText, collectedMatchesText;
+    [SerializeField] private GameObject destroyObj;
 
     private bool canBeLit = false;
 
@@ -33,7 +34,7 @@ public class Firewood : Interactable
         audioSource.Stop(); //polish: play extinguish sound
         foreach (ParticleSystem particles in particleSystems)
             particles.Stop();
-        Destroy(transform.root.gameObject);
+        Destroy(destroyObj);
     }
 
     private void OnCollectedMatches()

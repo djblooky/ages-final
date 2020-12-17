@@ -14,7 +14,13 @@ public class LevelLoader : MonoBehaviour
     
     public void StartFadeToBlack()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        if(SceneManager.GetActiveScene().buildIndex == 0){
+            StartCoroutine(LoadLevel(1));
+        }
+        else if(SceneManager.GetActiveScene().buildIndex == 1){
+            StartCoroutine(LoadLevel(0));
+        }
+        
     }
 
     IEnumerator LoadLevel(int index)
