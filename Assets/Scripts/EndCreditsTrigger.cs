@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class EndCreditsTrigger : MonoBehaviour
@@ -9,7 +10,13 @@ public class EndCreditsTrigger : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            EndCreditsTriggered?.Invoke();
+            StartCoroutine(StartCreditsAfterDelay());
         }
+    }
+
+    IEnumerator StartCreditsAfterDelay()
+    {
+        yield return new WaitForSeconds(10f);
+        EndCreditsTriggered?.Invoke();
     }
 }
